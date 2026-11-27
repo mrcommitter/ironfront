@@ -74,7 +74,8 @@ export function normalizePhoneNumber(raw: string): string | null {
   return s;
 }
 
-const DATA_DIR = path.resolve(process.cwd(), "data");
+const SEED_DIR = path.resolve(process.cwd(), "data");
+const DATA_DIR = process.env.VERCEL ? "/tmp/ironfront-data" : SEED_DIR;
 const DB_FILE = path.join(DATA_DIR, "accounts.json");
 const ORDERS_FILE = path.join(DATA_DIR, "orders.json");
 const DAILY_REWARD_COOLDOWN_MS = 24 * 60 * 60 * 1000;
@@ -104,6 +105,15 @@ export class AccountDatabase {
     try {
       if (!fs.existsSync(DATA_DIR)) {
         fs.mkdirSync(DATA_DIR, { recursive: true });
+      }
+      if (DATA_DIR !== SEED_DIR) {
+        for (const f of ["accounts.json", "orders.json"]) {
+          const src = path.join(SEED_DIR, f);
+          const dst = path.join(DATA_DIR, f);
+          if (!fs.existsSync(dst) && fs.existsSync(src)) {
+            fs.copyFileSync(src, dst);
+          }
+        }
       }
 
       if (fs.existsSync(DB_FILE)) {

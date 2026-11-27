@@ -57,7 +57,8 @@ export interface ClanRecord {
   };
 }
 
-const DATA_DIR = path.resolve(process.cwd(), "data");
+const SEED_DIR = path.resolve(process.cwd(), "data");
+const DATA_DIR = process.env.VERCEL ? "/tmp/ironfront-data" : SEED_DIR;
 const CLANS_FILE = path.join(DATA_DIR, "clans.json");
 
 export class ClanDatabase {
@@ -71,6 +72,12 @@ export class ClanDatabase {
     try {
       if (!fs.existsSync(DATA_DIR)) {
         fs.mkdirSync(DATA_DIR, { recursive: true });
+      }
+      if (DATA_DIR !== SEED_DIR) {
+        const src = path.join(SEED_DIR, "clans.json");
+        if (!fs.existsSync(CLANS_FILE) && fs.existsSync(src)) {
+          fs.copyFileSync(src, CLANS_FILE);
+        }
       }
 
       if (fs.existsSync(CLANS_FILE)) {
@@ -224,6 +231,12 @@ export class ClanDatabase {
     try {
       if (!fs.existsSync(DATA_DIR)) {
         fs.mkdirSync(DATA_DIR, { recursive: true });
+      }
+      if (DATA_DIR !== SEED_DIR) {
+        const src = path.join(SEED_DIR, "clans.json");
+        if (!fs.existsSync(CLANS_FILE) && fs.existsSync(src)) {
+          fs.copyFileSync(src, CLANS_FILE);
+        }
       }
       const data = Array.from(this.clans.values());
       const tmpFile = CLANS_FILE + ".tmp";

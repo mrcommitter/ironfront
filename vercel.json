@@ -1,7 +1,16 @@
 {
   "buildCommand": "npm run build-vercel",
   "outputDirectory": "static",
+  "functions": {
+    "api/index.ts": {
+      "includeFiles": "{resources/news.json,resources/cosmetics.json,data/*.json}"
+    }
+  },
   "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index"
+    },
     {
       "source": "/(.*)",
       "destination": "/index.html"

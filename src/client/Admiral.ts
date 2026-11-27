@@ -59,6 +59,12 @@ let injected = false;
  */
 export function loadAdmiral(): void {
   if (injected) return;
+  if (
+    typeof window !== "undefined" &&
+    window.location.hostname.endsWith(".vercel.app")
+  ) {
+    return;
+  }
   injected = true;
 
   // 1. Command-queue stub — must exist before the payload loads so buffered

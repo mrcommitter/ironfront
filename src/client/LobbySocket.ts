@@ -122,6 +122,12 @@ export class PublicLobbySocket {
       : ensureServerList());
     if (generation !== this.generation) return;
     if (listStatus === "outdated") this.fireUpdateAvailable();
+    if (listStatus === "no-server" && ClientEnv.serverHost() === undefined) {
+      // Static/serverless deployment without a dedicated game server:
+      // transition cleanly to gaveUp without spamming ws:// or showing a modal.
+      this.giveUp();
+      return;
+    }
     // Get config to determine number of workers, then pick a random one.
     // With no list and nothing injected there is no server to ask (a static
     // page while the API is unreachable), which is a connection failure like

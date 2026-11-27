@@ -582,6 +582,29 @@ export class GameModeSelector extends LitElement {
   }
 
   private renderLobbiesUnavailable() {
+    if (
+      this.feedGaveUp &&
+      !this.backendOutage &&
+      typeof window !== "undefined" &&
+      window.location.hostname.endsWith(".vercel.app")
+    ) {
+      return html`<div
+        class="flex flex-col items-center justify-center gap-3 h-44 sm:h-full rounded-xl bg-surface/60 px-6 text-center text-sm font-medium text-white/80"
+      >
+        <div class="text-base font-semibold text-white">
+          حالت تک‌نفره و آموزش آماده بازی است
+        </div>
+        <div class="text-xs text-white/60 max-w-md">
+          لابی‌های چندنفره زنده نیازمند سرور اختصاصی WebSocket هستند؛ می‌توانید هم‌اکنون بازی تک‌نفره یا آموزشی را شروع کنید.
+        </div>
+        <button
+          class="px-5 py-2 rounded-md bg-malibu-blue hover:bg-aquarius text-white text-sm font-medium tracking-wider"
+          @click=${this.openSinglePlayerModal}
+        >
+          ${translateText("main.solo")}
+        </button>
+      </div>`;
+    }
     // A gated desktop session has its remedy in the status bar, and the feed
     // stays closed until it is taken, so a Retry here could only do nothing.
     const canRetry = !lobbyFeedSuspended(this.desktopSessionState);

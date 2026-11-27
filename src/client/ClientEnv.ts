@@ -246,9 +246,13 @@ export class ClientEnv {
   }
   static jwtIssuer(): string {
     const audience = ClientEnv.jwtAudience();
-    return audience === "localhost"
-      ? "http://localhost:8787"
-      : `https://api.${audience}`;
+    if (audience === "localhost") {
+      return "http://localhost:8787";
+    }
+    if (audience.endsWith(".vercel.app")) {
+      return `https://${audience}/api`;
+    }
+    return `https://api.${audience}`;
   }
   static async jwkPublicKey(): Promise<JWK> {
     if (ClientEnv.publicKey) return ClientEnv.publicKey;

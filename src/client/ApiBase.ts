@@ -21,6 +21,13 @@ export function getApiBase() {
     return "http://localhost:8787";
   }
 
+  if (
+    typeof window !== "undefined" &&
+    window.location.hostname.endsWith(".vercel.app")
+  ) {
+    return `${window.location.origin}/api`;
+  }
+
   return `https://api.${domainname}`;
 }
 
