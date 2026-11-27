@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="flame_body" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#991B1B"/>
+      <stop offset="30%" stop-color="#DC2626"/>
+      <stop offset="65%" stop-color="#EA580C"/>
+      <stop offset="85%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#FEF08A"/>
+    </linearGradient>
+    <linearGradient id="gold_fire_rim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="50%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#7C2D12"/>
+    </linearGradient>
+    <radialGradient id="phoenix_heart" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="35%" stop-color="#FDE047"/>
+      <stop offset="70%" stop-color="#EF4444"/>
+      <stop offset="100%" stop-color="#7F1D1D"/>
+    </radialGradient>
+    <filter id="fire_glow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="0" stdDeviation="4.5" flood-color="#EA580C" flood-opacity="0.9"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#FBBF24" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#fire_glow)">
+    <!-- Back Outer Flame Crests (Rising Phoenix Feathers) -->
+    <path d="M64 8 C58 24 50 38 42 54 C54 48 58 32 64 8 Z" fill="#FEF08A"/>
+    <path d="M64 8 C70 24 78 38 86 54 C74 48 70 32 64 8 Z" fill="#FEF08A"/>
+
+    <path d="M22 28 C26 44 32 60 40 72 C32 60 26 46 22 28 Z" fill="#F97316"/>
+    <path d="M106 28 C102 44 96 60 88 72 C96 60 102 46 106 28 Z" fill="#F97316"/>
+
+    <!-- Left Wing Curving Inward -->
+    <path d="M14 92 C10 68 18 42 34 26 C28 42 34 62 48 78 Z" fill="url(#flame_body)" stroke="#991B1B" stroke-width="1.2"/>
+    <!-- Right Wing Curving Inward -->
+    <path d="M114 92 C118 68 110 42 94 26 C100 42 94 62 80 78 Z" fill="url(#flame_body)" stroke="#991B1B" stroke-width="1.2"/>
+
+    <!-- Central Majestic Simurgh Plume -->
+    <path d="M64 16 C54 36 44 58 48 88 C56 76 64 68 64 54 C64 68 72 76 80 88 C84 58 74 36 64 16 Z" 
+          fill="url(#flame_body)" stroke="#78350F" stroke-width="1.8"/>
+
+    <!-- Golden Crown Diadem Interlocking with Flames -->
+    <path d="M16 92 L28 66 L44 80 L64 48 L84 80 L100 66 L112 92 Z" 
+          fill="url(#gold_fire_rim)" stroke="#78350F" stroke-width="1.8" stroke-linejoin="round" opacity="0.95"/>
+
+    <!-- Flame Veins -->
+    <path d="M64 24 Q60 48 64 62 Q68 48 64 24 Z" fill="#FFFFFF" opacity="0.6"/>
+    <path d="M36 40 Q40 56 46 70 Z" stroke="#FEF08A" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M92 40 Q88 56 82 70 Z" stroke="#FEF08A" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Royal Flame Base -->
+    <rect x="14" y="90" width="100" height="20" rx="4" fill="#7C2D12" stroke="#EA580C" stroke-width="2"/>
+    <rect x="16" y="92" width="96" height="16" rx="2.5" fill="url(#gold_fire_rim)"/>
+
+    <!-- Simurgh Heart - Central Solar Fire Gem -->
+    <circle cx="64" cy="68" r="9" fill="url(#phoenix_heart)" stroke="#FEF08A" stroke-width="2"/>
+    <polygon points="64,61 67,68 64,75 61,68" fill="#FFFFFF"/>
+
+    <!-- Base Fire Opals -->
+    <circle cx="64" cy="100" r="5.5" fill="url(#phoenix_heart)" stroke="#78350F" stroke-width="1.2"/>
+    <circle cx="40" cy="100" r="4.5" fill="#EF4444" stroke="#78350F" stroke-width="1"/>
+    <circle cx="88" cy="100" r="4.5" fill="#EF4444" stroke="#78350F" stroke-width="1"/>
+    <circle cx="22" cy="100" r="3.5" fill="#F59E0B" stroke="#78350F" stroke-width="1"/>
+    <circle cx="106" cy="100" r="3.5" fill="#F59E0B" stroke="#78350F" stroke-width="1"/>
+  </g>
+</svg>

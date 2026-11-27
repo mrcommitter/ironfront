@@ -1,0 +1,384 @@
+import { html, LitElement } from "lit";
+import { customElement } from "lit/decorators.js";
+import { EventBus } from "../../../core/EventBus";
+import {
+  BuildableUnit,
+  BuildMenus,
+  Gold,
+  PlayerBuildableUnitType,
+  UnitType,
+} from "../../../core/game/Game";
+import { UserSettings } from "../../../core/game/UserSettings";
+import { Controller } from "../../Controller";
+import { ToggleStructureEvent } from "../../InputHandler";
+import { UIState } from "../../UIState";
+import { renderNumber, showToast, translateText } from "../../Utils";
+import { GameView } from "../../view";
+import {
+  atomBombIcon,
+  cityIcon,
+  defensePostIcon,
+  factoryIcon,
+  goldCoinIcon,
+  hydrogenBombIcon,
+  mirvIcon,
+  missileSiloIcon,
+  portIcon,
+  samLauncherIcon,
+  warshipIcon,
+} from "../HotbarIcons";
+import { TutorialHighlight, TutorialHighlightEvent } from "../Tutorial";
+
+@customElement("unit-display")
+export class UnitDisplay extends LitElement implements Controller {
+  public game: GameView;
+  public eventBus: EventBus;
+  public uiState: UIState;
+  private playerBuildables: BuildableUnit[] | null = null;
+  private keybinds: Record<string, { value: string; key: string }> = {};
+  private _cities = 0;
+  private _warships = 0;
+  private _factories = 0;
+  private _missileSilo = 0;
+  private _port = 0;
+  private _defensePost = 0;
+  private _samLauncher = 0;
+  private allDisabled = false;
+  private _hoveredUnit: PlayerBuildableUnitType | null = null;
+  private tutorialHighlight: PlayerBuildableUnitType | null = null;
+
+  createRenderRoot() {
+    return this;
+  }
+
+  init() {
+    const config = this.game.config();
+    const userSettings = new UserSettings();
+
+    this.keybinds = userSettings.parsedUserKeybinds();
+
+    this.allDisabled = BuildMenus.types.every((u) => config.isUnitDisabled(u));
+
+    const highlightUnits: Partial<
+      Record<TutorialHighlight, PlayerBuildableUnitType>
+    > = {
+      city: UnitType.City,
+      port: UnitType.Port,
+      defense_post: UnitType.DefensePost,
+      factory: UnitType.Factory,
+      warship: UnitType.Warship,
+      silo: UnitType.MissileSilo,
+      atom: UnitType.AtomBomb,
+      hydrogen: UnitType.HydrogenBomb,
+      mirv: UnitType.MIRV,
+      sam: UnitType.SAMLauncher,
+    };
+    this.eventBus.on(TutorialHighlightEvent, (e) => {
+      this.tutorialHighlight = (e.target && highlightUnits[e.target]) ?? null;
+      this.requestUpdate();
+    });
+    this.requestUpdate();
+  }
+
+  private cost(item: UnitType): Gold {
+    for (const bu of this.playerBuildables ?? []) {
+      if (bu.type === item) {
+        return bu.cost;
+      }
+    }
+    return 0n;
+  }
+
+  private canBuild(item: UnitType): boolean {
+    if (this.game?.config().isUnitDisabled(item)) return false;
+    const player = this.game?.myPlayer();
+    const gs = this.game?.config().grandStrategyConfig();
+    switch (item) {
+      case UnitType.AtomBomb:
+      case UnitType.HydrogenBomb:
+      case UnitType.MIRV: {
+        const fuelNeeded = item === UnitType.AtomBomb ? 50 : 100;
+        const hasFuel =
+          !gs?.enabled || !gs.oilEconomy || (player?.fuel?.() ?? 0) >= fuelNeeded;
+        return (
+          hasFuel &&
+          this.cost(item) <= (player?.gold() ?? 0n) &&
+          (player?.units(UnitType.MissileSilo).length ?? 0) > 0
+        );
+      }
+      case UnitType.Warship:
+        return (
+          this.cost(item) <= (player?.gold() ?? 0n) &&
+          (player?.units(UnitType.Port).length ?? 0) > 0
+        );
+      default:
+        return this.cost(item) <= (player?.gold() ?? 0n);
+    }
+  }
+
+  tick() {
+    const player = this.game?.myPlayer();
+    if (!player) return;
+    player.buildables(undefined, BuildMenus.types).then((buildables) => {
+      this.playerBuildables = buildables;
+    });
+    this._cities = player.totalUnitLevels(UnitType.City);
+    this._missileSilo = player.totalUnitLevels(UnitType.MissileSilo);
+    this._port = player.totalUnitLevels(UnitType.Port);
+    this._defensePost = player.totalUnitLevels(UnitType.DefensePost);
+    this._samLauncher = player.totalUnitLevels(UnitType.SAMLauncher);
+    this._factories = player.totalUnitLevels(UnitType.Factory);
+    this._warships = player.totalUnitLevels(UnitType.Warship);
+    this.requestUpdate();
+  }
+
+  render() {
+    const myPlayer = this.game?.myPlayer();
+    if (
+      !this.game ||
+      !myPlayer ||
+      this.game.inSpawnPhase() ||
+      !myPlayer.isAlive()
+    ) {
+      return null;
+    }
+    if (this.allDisabled) {
+      return null;
+    }
+
+    return html`
+      <div class="border-t border-cyan-500/20 px-2 py-1.5 w-full bg-slate-950/90 rounded-b-xl">
+        <div class="grid grid-rows-1 grid-flow-col gap-1 w-fit mx-auto">
+          ${this.renderUnitItem(
+            cityIcon,
+            this._cities,
+            UnitType.City,
+            "city",
+            this.keybinds["buildCity"]?.key ?? "1",
+          )}
+          ${this.renderUnitItem(
+            factoryIcon,
+            this._factories,
+            UnitType.Factory,
+            "factory",
+            this.keybinds["buildFactory"]?.key ?? "2",
+          )}
+          ${this.renderUnitItem(
+            portIcon,
+            this._port,
+            UnitType.Port,
+            "port",
+            this.keybinds["buildPort"]?.key ?? "3",
+          )}
+          ${this.renderUnitItem(
+            defensePostIcon,
+            this._defensePost,
+            UnitType.DefensePost,
+            "defense_post",
+            this.keybinds["buildDefensePost"]?.key ?? "4",
+          )}
+          ${this.renderUnitItem(
+            missileSiloIcon,
+            this._missileSilo,
+            UnitType.MissileSilo,
+            "missile_silo",
+            this.keybinds["buildMissileSilo"]?.key ?? "5",
+          )}
+          ${this.renderUnitItem(
+            samLauncherIcon,
+            this._samLauncher,
+            UnitType.SAMLauncher,
+            "sam_launcher",
+            this.keybinds["buildSamLauncher"]?.key ?? "6",
+          )}
+          ${this.renderUnitItem(
+            warshipIcon,
+            this._warships,
+            UnitType.Warship,
+            "warship",
+            this.keybinds["buildWarship"]?.key ?? "7",
+          )}
+          ${this.renderUnitItem(
+            atomBombIcon,
+            null,
+            UnitType.AtomBomb,
+            "atom_bomb",
+            this.keybinds["buildAtomBomb"]?.key ?? "8",
+          )}
+          ${this.renderUnitItem(
+            hydrogenBombIcon,
+            null,
+            UnitType.HydrogenBomb,
+            "hydrogen_bomb",
+            this.keybinds["buildHydrogenBomb"]?.key ?? "9",
+          )}
+          ${this.renderUnitItem(
+            mirvIcon,
+            null,
+            UnitType.MIRV,
+            "mirv",
+            this.keybinds["buildMIRV"]?.key ?? "0",
+          )}
+        </div>
+      </div>
+    `;
+  }
+
+  private renderUnitItem(
+    icon: string,
+    number: number | null,
+    unitType: PlayerBuildableUnitType,
+    structureKey: string,
+    hotkey: string,
+  ) {
+    if (this.game.config().isUnitDisabled(unitType)) {
+      return html``;
+    }
+    const selected = this.uiState.ghostStructure === unitType;
+    const hovered = this._hoveredUnit === unitType;
+    const displayHotkey = hotkey
+      .replace("Digit", "")
+      .replace("Key", "")
+      .toUpperCase();
+
+    const isLeftEdge =
+      structureKey === "mirv" ||
+      structureKey === "hydrogen_bomb" ||
+      structureKey === "atom_bomb";
+    const isRightEdge =
+      structureKey === "city" || structureKey === "factory";
+    const alignClass = isLeftEdge
+      ? "left-0"
+      : isRightEdge
+        ? "right-0"
+        : "left-1/2 -translate-x-1/2";
+
+    return html`
+      <div
+        class="flex flex-col items-center relative"
+        @mouseenter=${() => {
+          this._hoveredUnit = unitType;
+          this.requestUpdate();
+        }}
+        @mouseleave=${() => {
+          this._hoveredUnit = null;
+          this.requestUpdate();
+        }}
+      >
+        ${hovered
+          ? html`
+              <div
+                class="absolute bottom-full ${alignClass} mb-2 text-slate-200 text-center w-64 max-w-[85vw] text-xs bg-slate-950/95 border border-cyan-500/40 backdrop-blur-xl rounded-xl p-2.5 z-[1000] shadow-[0_12px_36px_rgba(0,0,0,0.8),0_0_20px_rgba(6,182,212,0.2)] pointer-events-none drop-shadow-2xl select-none"
+              >
+                <div class="font-bold text-sm mb-1 text-white flex items-center justify-center gap-1.5">
+                  <span>${translateText("unit_type." + structureKey)}</span>
+                  <span class="text-cyan-300 font-mono text-xs bg-cyan-950/80 px-1.5 py-0.2 rounded border border-cyan-500/40">[${displayHotkey}]</span>
+                </div>
+                <div class="py-1 px-1 text-slate-300 text-[11px] leading-snug">
+                  ${translateText("build_menu.desc." + structureKey)}
+                </div>
+                ${unitType === UnitType.Warship
+                  ? html`<div
+                      class="mt-1 px-2 py-0.5 text-[10px] text-cyan-300 bg-cyan-950/60 rounded border border-cyan-400/30 font-medium"
+                    >
+                      ⇧ ${translateText("build_menu.warship_shift_hint")}
+                    </div>`
+                  : null}
+                ${this.game?.config()?.grandStrategyConfig()?.oilEconomy &&
+                (unitType === UnitType.AtomBomb ||
+                  unitType === UnitType.HydrogenBomb ||
+                  unitType === UnitType.MIRV ||
+                  unitType === UnitType.Warship)
+                  ? html`
+                      <div
+                        class="flex items-center justify-center gap-1 mt-1 text-amber-300 font-mono text-[11px] font-bold bg-amber-950/70 px-2 py-0.5 rounded border border-amber-500/40"
+                      >
+                        <span>🛢️</span>
+                        <span>
+                          ${unitType === UnitType.AtomBomb
+                            ? "سوخت پرتاب: ۵۰ بشکه"
+                            : unitType === UnitType.HydrogenBomb
+                              ? "سوخت پرتاب: ۱۰۰ بشکه"
+                              : unitType === UnitType.MIRV
+                                ? "سوخت پرتاب: ۱۰۰ بشکه"
+                                : "مصرف ناوگان: ۰.۵/s"}
+                        </span>
+                      </div>
+                    `
+                  : null}
+                <div class="flex items-center justify-center gap-1.5 mt-1.5 pt-1 border-t border-white/10 text-amber-300 font-mono font-bold text-xs">
+                  <img src=${goldCoinIcon} width="13" height="13" />
+                  <span>${renderNumber(this.cost(unitType))} طلا</span>
+                </div>
+              </div>
+            `
+          : null}
+        <div
+          class="${this.canBuild(unitType)
+            ? ""
+            : "opacity-40"} border rounded-xl p-1 flex flex-col items-center justify-between cursor-pointer transition-all duration-150 min-w-[42px] max-w-[46px] h-[44px] shrink-0
+             ${selected
+               ? "bg-cyan-500/25 border-cyan-400 shadow-[0_0_12px_rgba(6,182,212,0.4)] text-cyan-200"
+               : "bg-slate-900/80 border-slate-700/80 hover:border-slate-500 hover:bg-slate-850 text-white shadow-xs"}
+             ${this.tutorialHighlight === unitType ? "tutorial-highlight" : ""}"
+          @click=${() => {
+            if (selected) {
+              this.uiState.ghostStructure = null;
+            } else if (this.canBuild(unitType)) {
+              this.uiState.ghostStructure = unitType;
+            } else {
+              const player = this.game?.myPlayer();
+              const gs = this.game?.config().grandStrategyConfig();
+              if (
+                gs?.enabled &&
+                gs.oilEconomy &&
+                (unitType === UnitType.AtomBomb ||
+                  unitType === UnitType.HydrogenBomb ||
+                  unitType === UnitType.MIRV)
+              ) {
+                const fuelNeeded = unitType === UnitType.AtomBomb ? 50 : 100;
+                if ((player?.fuel?.() ?? 0) < fuelNeeded) {
+                  showToast(
+                    `سوخت استراتژیک ناکافی برای پرتاب! نیاز به ${fuelNeeded} بشکه سوخت دارید (موجودی: ${Math.floor(player?.fuel?.() ?? 0)}).`,
+                    "red",
+                  );
+                }
+              }
+            }
+            this.requestUpdate();
+          }}
+          @mouseenter=${() => {
+            switch (unitType) {
+              case UnitType.AtomBomb:
+              case UnitType.HydrogenBomb:
+                this.eventBus?.emit(
+                  new ToggleStructureEvent([
+                    UnitType.MissileSilo,
+                    UnitType.SAMLauncher,
+                  ]),
+                );
+                break;
+              case UnitType.Warship:
+                this.eventBus?.emit(new ToggleStructureEvent([UnitType.Port]));
+                break;
+              default:
+                this.eventBus?.emit(new ToggleStructureEvent([unitType]));
+            }
+          }}
+          @mouseleave=${() =>
+            this.eventBus?.emit(new ToggleStructureEvent(null))}
+        >
+          <div class="w-full flex items-center justify-between px-0.5 leading-none">
+            <span class="text-[9px] font-mono font-bold text-slate-400 bg-white/[0.08] px-1 py-0.2 rounded leading-none">
+              ${displayHotkey}
+            </span>
+            ${number !== null
+              ? html`<span class="text-[10px] font-mono font-bold leading-none ${number > 0 ? "text-cyan-300" : "text-slate-400"}">${renderNumber(number)}</span>`
+              : html`<span class="text-[9px] text-transparent leading-none">-</span>`}
+          </div>
+          <img src=${icon} alt=${structureKey} class="align-middle size-5 mb-0.5 drop-shadow-[0_0_4px_rgba(255,255,255,0.2)]" />
+        </div>
+      </div>
+    `;
+  }
+}

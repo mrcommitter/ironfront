@@ -1,0 +1,1336 @@
+{
+  "colorPalettes": {
+    "cyberpunk": {
+      "name": "cyberpunk",
+      "primaryColor": "#00f0ff",
+      "secondaryColor": "#ff007f"
+    },
+    "magma": {
+      "name": "magma",
+      "primaryColor": "#ff3700",
+      "secondaryColor": "#ffbb00"
+    },
+    "gold_leaf": {
+      "name": "gold_leaf",
+      "primaryColor": "#ffd700",
+      "secondaryColor": "#d4af37"
+    },
+    "deep_ocean": {
+      "name": "deep_ocean",
+      "primaryColor": "#0a2463",
+      "secondaryColor": "#3e92cc"
+    },
+    "carbon_fiber": {
+      "name": "carbon_fiber",
+      "primaryColor": "#1c1c1c",
+      "secondaryColor": "#444444"
+    },
+    "desert_camo": {
+      "name": "desert_camo",
+      "primaryColor": "#c2b280",
+      "secondaryColor": "#8b7355"
+    },
+    "matrix_code": {
+      "name": "matrix_code",
+      "primaryColor": "#00ff66",
+      "secondaryColor": "#003b00"
+    },
+    "stripes": {
+      "name": "stripes",
+      "primaryColor": "#ffffff",
+      "secondaryColor": "#888888"
+    },
+    "void_nebula": {
+      "name": "void_nebula",
+      "primaryColor": "#0a001a",
+      "secondaryColor": "#c026d3"
+    },
+    "emerald_empire": {
+      "name": "emerald_empire",
+      "primaryColor": "#064e3b",
+      "secondaryColor": "#34d399"
+    },
+    "crimson_dragon": {
+      "name": "crimson_dragon",
+      "primaryColor": "#450a0a",
+      "secondaryColor": "#ef4444"
+    },
+    "frost_titan": {
+      "name": "frost_titan",
+      "primaryColor": "#082f49",
+      "secondaryColor": "#38bdf8"
+    },
+    "solar_flare": {
+      "name": "solar_flare",
+      "primaryColor": "#7c2d12",
+      "secondaryColor": "#fbbf24"
+    },
+    "royal_persia": {
+      "name": "royal_persia",
+      "primaryColor": "#3b0764",
+      "secondaryColor": "#eab308"
+    },
+    "stealth_phantom": {
+      "name": "stealth_phantom",
+      "primaryColor": "#0f172a",
+      "secondaryColor": "#64748b"
+    }
+  },
+  "patterns": {
+    "cyberpunk": {
+      "name": "cyberpunk",
+      "pattern": "ADEYM5nMZjOZzGY",
+      "rarity": "epic",
+      "priceSoft": 600,
+      "priceHard": 30,
+      "colorPalettes": [
+        {
+          "name": "cyberpunk",
+          "isArchived": false
+        }
+      ],
+      "product": null
+    },
+    "magma": {
+      "name": "magma",
+      "pattern": "ADEYzMwzM8zMMzM",
+      "rarity": "legendary",
+      "priceSoft": 1200,
+      "priceHard": 60,
+      "colorPalettes": [
+        {
+          "name": "magma",
+          "isArchived": false
+        }
+      ],
+      "product": null
+    },
+    "gold_leaf": {
+      "name": "gold_leaf",
+      "pattern": "ABEIpaU",
+      "rarity": "legendary",
+      "priceSoft": 1500,
+      "priceHard": 75,
+      "colorPalettes": [
+        {
+          "name": "gold_leaf",
+          "isArchived": false
+        }
+      ],
+      "product": null
+    },
+    "deep_ocean": {
+      "name": "deep_ocean",
+      "pattern": "ADEYM5nMZjOZzGY",
+      "rarity": "rare",
+      "priceSoft": 350,
+      "priceHard": 20,
+      "colorPalettes": [
+        {
+          "name": "deep_ocean",
+          "isArchived": false
+        }
+      ],
+      "product": null
+    },
+    "carbon_fiber": {
+      "name": "carbon_fiber",
+      "pattern": "ADEYzMwzM8zMMzM",
+      "rarity": "rare",
+      "priceSoft": 450,
+      "priceHard": 25,
+      "colorPalettes": [
+        {
+          "name": "carbon_fiber",
+          "isArchived": false
+        }
+      ],
+      "product": null
+    },
+    "desert_camo": {
+      "name": "desert_camo",
+      "pattern": "ADEYzMwzM8zMMzM",
+      "rarity": "rare",
+      "priceSoft": 400,
+      "priceHard": 20,
+      "colorPalettes": [
+        {
+          "name": "desert_camo",
+          "isArchived": false
+        }
+      ],
+      "product": null
+    },
+    "matrix_code": {
+      "name": "matrix_code",
+      "pattern": "ACEQfxAEQQA",
+      "rarity": "epic",
+      "priceSoft": 800,
+      "priceHard": 40,
+      "colorPalettes": [
+        {
+          "name": "matrix_code",
+          "isArchived": false
+        }
+      ],
+      "product": null
+    },
+    "stripes": {
+      "name": "stripes",
+      "pattern": "ADEYM5nMZjOZzGY",
+      "rarity": "common",
+      "priceSoft": 200,
+      "priceHard": 10,
+      "colorPalettes": [
+        {
+          "name": "stripes",
+          "isArchived": false
+        }
+      ],
+      "product": null
+    },
+    "void_nebula": {
+      "name": "void_nebula",
+      "pattern": "ADEYM5nMZjOZzGY",
+      "rarity": "legendary",
+      "priceSoft": 1400,
+      "priceHard": 70,
+      "colorPalettes": [
+        {
+          "name": "void_nebula",
+          "isArchived": false
+        }
+      ],
+      "product": null
+    },
+    "emerald_empire": {
+      "name": "emerald_empire",
+      "pattern": "ABEIpaU",
+      "rarity": "epic",
+      "priceSoft": 850,
+      "priceHard": 45,
+      "colorPalettes": [
+        {
+          "name": "emerald_empire",
+          "isArchived": false
+        }
+      ],
+      "product": null
+    },
+    "crimson_dragon": {
+      "name": "crimson_dragon",
+      "pattern": "ADEYzMwzM8zMMzM",
+      "rarity": "legendary",
+      "priceSoft": 1350,
+      "priceHard": 65,
+      "colorPalettes": [
+        {
+          "name": "crimson_dragon",
+          "isArchived": false
+        }
+      ],
+      "product": null
+    },
+    "frost_titan": {
+      "name": "frost_titan",
+      "pattern": "ABEIpaU",
+      "rarity": "epic",
+      "priceSoft": 900,
+      "priceHard": 45,
+      "colorPalettes": [
+        {
+          "name": "frost_titan",
+          "isArchived": false
+        }
+      ],
+      "product": null
+    },
+    "solar_flare": {
+      "name": "solar_flare",
+      "pattern": "ACEQfxAEQQA",
+      "rarity": "legendary",
+      "priceSoft": 1600,
+      "priceHard": 80,
+      "colorPalettes": [
+        {
+          "name": "solar_flare",
+          "isArchived": false
+        }
+      ],
+      "product": null
+    },
+    "royal_persia": {
+      "name": "royal_persia",
+      "pattern": "ABEIpaU",
+      "rarity": "legendary",
+      "priceSoft": 1750,
+      "priceHard": 85,
+      "colorPalettes": [
+        {
+          "name": "royal_persia",
+          "isArchived": false
+        }
+      ],
+      "product": null
+    },
+    "stealth_phantom": {
+      "name": "stealth_phantom",
+      "pattern": "ADEYzMwzM8zMMzM",
+      "rarity": "rare",
+      "priceSoft": 500,
+      "priceHard": 25,
+      "colorPalettes": [
+        {
+          "name": "stealth_phantom",
+          "isArchived": false
+        }
+      ],
+      "product": null
+    }
+  },
+  "flags": {
+    "lion_sun": {
+      "name": "lion_sun",
+      "url": "/flags/iran_darafsh.svg",
+      "rarity": "legendary",
+      "priceSoft": 1200,
+      "priceHard": 60,
+      "product": null
+    },
+    "achaemenid": {
+      "name": "achaemenid",
+      "url": "/flags/Achaemenid Empire.svg",
+      "rarity": "legendary",
+      "priceSoft": 1500,
+      "priceHard": 75,
+      "product": null
+    },
+    "sassanid": {
+      "name": "sassanid",
+      "url": "/flags/Sassanid Empire.svg",
+      "rarity": "legendary",
+      "priceSoft": 1400,
+      "priceHard": 70,
+      "product": null
+    },
+    "persia": {
+      "name": "persia",
+      "url": "/flags/Persia.svg",
+      "rarity": "epic",
+      "priceSoft": 1000,
+      "priceHard": 50,
+      "product": null
+    },
+    "khalij_fars": {
+      "name": "khalij_fars",
+      "url": "/flags/iran_khalij.svg",
+      "rarity": "legendary",
+      "priceSoft": 1300,
+      "priceHard": 65,
+      "product": null
+    },
+    "sparta": {
+      "name": "sparta",
+      "url": "/flags/Sparta.svg",
+      "rarity": "epic",
+      "priceSoft": 950,
+      "priceHard": 50,
+      "product": null
+    },
+    "pirates": {
+      "name": "pirates",
+      "url": "/flags/Republic of Pirates.svg",
+      "rarity": "epic",
+      "priceSoft": 850,
+      "priceHard": 45,
+      "product": null
+    },
+    "golden_horde": {
+      "name": "golden_horde",
+      "url": "/flags/Golden Horde.svg",
+      "rarity": "rare",
+      "priceSoft": 600,
+      "priceHard": 30,
+      "product": null
+    },
+    "byzantine": {
+      "name": "byzantine",
+      "url": "/flags/Byzantine Empire.svg",
+      "rarity": "rare",
+      "priceSoft": 550,
+      "priceHard": 30,
+      "product": null
+    },
+    "mongol": {
+      "name": "mongol",
+      "url": "/flags/Mongol Empire.svg",
+      "rarity": "rare",
+      "priceSoft": 550,
+      "priceHard": 30,
+      "product": null
+    },
+    "war_eagle": {
+      "name": "war_eagle",
+      "url": "/flags/custom/rocket.svg",
+      "rarity": "epic",
+      "priceSoft": 700,
+      "priceHard": 35,
+      "product": null
+    },
+    "skull_crossbones": {
+      "name": "skull_crossbones",
+      "url": "/flags/custom/admin_shield.svg",
+      "rarity": "rare",
+      "priceSoft": 500,
+      "priceHard": 25,
+      "product": null
+    },
+    "atomic_hazard": {
+      "name": "atomic_hazard",
+      "url": "/flags/custom/octagram.svg",
+      "rarity": "epic",
+      "priceSoft": 750,
+      "priceHard": 40,
+      "product": null
+    },
+    "dragon_shield": {
+      "name": "dragon_shield",
+      "url": "/flags/custom/laurel_wreath.svg",
+      "rarity": "rare",
+      "priceSoft": 450,
+      "priceHard": 25,
+      "product": null
+    },
+    "peace_dove": {
+      "name": "peace_dove",
+      "url": "/flags/custom/center_flower.svg",
+      "rarity": "common",
+      "priceSoft": 250,
+      "priceHard": 15,
+      "product": null
+    }
+  },
+  "crowns": {
+    "emperor_gold": {
+      "name": "emperor_gold",
+      "url": "/crowns/crown_emperor_gold.svg",
+      "rarity": "legendary",
+      "priceSoft": 1500,
+      "priceHard": 75,
+      "product": null
+    },
+    "cyrus_great": {
+      "name": "cyrus_great",
+      "url": "/crowns/crown_cyrus_great.svg",
+      "rarity": "legendary",
+      "priceSoft": 1800,
+      "priceHard": 90,
+      "product": null
+    },
+    "dark_monarch": {
+      "name": "dark_monarch",
+      "url": "/crowns/crown_dark_monarch.svg",
+      "rarity": "legendary",
+      "priceSoft": 1600,
+      "priceHard": 80,
+      "product": null
+    },
+    "phoenix_flame": {
+      "name": "phoenix_flame",
+      "url": "/crowns/crown_phoenix_flame.svg",
+      "rarity": "epic",
+      "priceSoft": 1200,
+      "priceHard": 60,
+      "product": null
+    },
+    "frost_valkyrie": {
+      "name": "frost_valkyrie",
+      "url": "/crowns/crown_frost_valkyrie.svg",
+      "rarity": "epic",
+      "priceSoft": 1100,
+      "priceHard": 55,
+      "product": null
+    },
+    "spartan_warlord": {
+      "name": "spartan_warlord",
+      "url": "/crowns/crown_spartan_warlord.svg",
+      "rarity": "rare",
+      "priceSoft": 800,
+      "priceHard": 40,
+      "product": null
+    },
+    "laurel_caesar": {
+      "name": "laurel_caesar",
+      "url": "/crowns/crown_laurel_caesar.svg",
+      "rarity": "rare",
+      "priceSoft": 750,
+      "priceHard": 35,
+      "product": null
+    },
+    "cyber_neon": {
+      "name": "cyber_neon",
+      "url": "/crowns/crown_cyber_neon.svg",
+      "rarity": "epic",
+      "priceSoft": 1300,
+      "priceHard": 65,
+      "product": null
+    },
+    "spartan_crest": {
+      "name": "spartan_crest",
+      "url": "/crowns/crown_spartan_warlord.svg",
+      "rarity": "rare",
+      "priceSoft": 500,
+      "priceHard": 25,
+      "product": null
+    },
+    "silver_wreath": {
+      "name": "silver_wreath",
+      "url": "/crowns/crown_laurel_caesar.svg",
+      "rarity": "rare",
+      "priceSoft": 400,
+      "priceHard": 20,
+      "product": null
+    },
+    "marshal_star": {
+      "name": "marshal_star",
+      "url": "/flags/custom/eu_star.svg",
+      "rarity": "epic",
+      "priceSoft": 800,
+      "priceHard": 40,
+      "product": null
+    }
+  },
+  "skins": {},
+  "effects": {
+    "transportShipTrail": {
+      "fire_trail": {
+        "name": "fire_trail",
+        "effectType": "transportShipTrail",
+        "product": null,
+        "priceSoft": 500,
+        "priceHard": 25,
+        "rarity": "rare",
+        "attributes": {
+          "type": "gradient",
+          "colors": ["#ff3300", "#ffaa00"],
+          "colorSize": 16,
+          "movementSpeed": 0.2
+        }
+      },
+      "golden_dust": {
+        "name": "golden_dust",
+        "effectType": "transportShipTrail",
+        "product": null,
+        "priceSoft": 850,
+        "priceHard": 45,
+        "rarity": "epic",
+        "attributes": {
+          "type": "gradient",
+          "colors": ["#ffd700", "#fff2a3"],
+          "colorSize": 12,
+          "movementSpeed": 0.15
+        }
+      },
+      "void_nebula": {
+        "name": "void_nebula",
+        "effectType": "transportShipTrail",
+        "product": null,
+        "priceSoft": 950,
+        "priceHard": 50,
+        "rarity": "epic",
+        "attributes": {
+          "type": "gradient",
+          "colors": ["#a855f7", "#ec4899", "#06b6d4"],
+          "colorSize": 14,
+          "movementSpeed": 0.25
+        }
+      },
+      "matrix_stream": {
+        "name": "matrix_stream",
+        "effectType": "transportShipTrail",
+        "product": null,
+        "priceSoft": 600,
+        "priceHard": 30,
+        "rarity": "rare",
+        "attributes": {
+          "type": "gradient",
+          "colors": ["#00ff66", "#003b00"],
+          "colorSize": 10,
+          "movementSpeed": 0.3
+        }
+      },
+      "frost_drift": {
+        "name": "frost_drift",
+        "effectType": "transportShipTrail",
+        "product": null,
+        "priceSoft": 700,
+        "priceHard": 35,
+        "rarity": "rare",
+        "attributes": {
+          "type": "gradient",
+          "colors": ["#38bdf8", "#e0f2fe"],
+          "colorSize": 15,
+          "movementSpeed": 0.18
+        }
+      }
+    },
+    "nukeTrail": {
+      "lightning_strike": {
+        "name": "lightning_strike",
+        "effectType": "nukeTrail",
+        "product": null,
+        "priceSoft": 900,
+        "priceHard": 45,
+        "rarity": "epic",
+        "attributes": {
+          "type": "gradient",
+          "colors": ["#00f0ff", "#ffffff"],
+          "colorSize": 0.5,
+          "movementSpeed": 2
+        }
+      },
+      "hellfire_missile": {
+        "name": "hellfire_missile",
+        "effectType": "nukeTrail",
+        "product": null,
+        "priceSoft": 1200,
+        "priceHard": 60,
+        "rarity": "legendary",
+        "attributes": {
+          "type": "gradient",
+          "colors": ["#dc2626", "#f97316", "#fef08a"],
+          "colorSize": 0.8,
+          "movementSpeed": 2.5
+        }
+      },
+      "cosmic_comet": {
+        "name": "cosmic_comet",
+        "effectType": "nukeTrail",
+        "product": null,
+        "priceSoft": 1100,
+        "priceHard": 55,
+        "rarity": "epic",
+        "attributes": {
+          "type": "gradient",
+          "colors": ["#8b5cf6", "#ec4899", "#38bdf8"],
+          "colorSize": 0.6,
+          "movementSpeed": 2.2
+        }
+      },
+      "emerald_beam": {
+        "name": "emerald_beam",
+        "effectType": "nukeTrail",
+        "product": null,
+        "priceSoft": 750,
+        "priceHard": 35,
+        "rarity": "rare",
+        "attributes": {
+          "type": "gradient",
+          "colors": ["#10b981", "#a7f3d0"],
+          "colorSize": 0.5,
+          "movementSpeed": 1.8
+        }
+      },
+      "quantum_spiral": {
+        "name": "quantum_spiral",
+        "effectType": "nukeTrail",
+        "product": null,
+        "priceSoft": 1500,
+        "priceHard": 75,
+        "rarity": "legendary",
+        "attributes": {
+          "type": "spiral",
+          "colors": ["#00f0ff", "#a855f7", "#ec4899"],
+          "radius": 1.8,
+          "strands": 3,
+          "rotationSpeed": 4
+        }
+      }
+    },
+    "nukeExplosion": {
+      "plasma_nuke": {
+        "name": "plasma_nuke",
+        "effectType": "nukeExplosion",
+        "product": null,
+        "priceSoft": 1500,
+        "priceHard": 75,
+        "rarity": "legendary",
+        "attributes": {
+          "type": "shockwave",
+          "nukeType": "atom",
+          "colors": ["#a855f7", "#06b6d4"],
+          "size": 15,
+          "speed": 10,
+          "thickness": 2,
+          "transitionSpeed": 1
+        }
+      },
+      "supernova_burst": {
+        "name": "supernova_burst",
+        "effectType": "nukeExplosion",
+        "product": null,
+        "priceSoft": 1800,
+        "priceHard": 90,
+        "rarity": "legendary",
+        "attributes": {
+          "type": "sparkles",
+          "nukeType": "atom",
+          "colors": ["#fde047", "#f97316", "#ef4444"],
+          "size": 20,
+          "speed": 12,
+          "thickness": 2.5,
+          "transitionSpeed": 2,
+          "density": 40
+        }
+      },
+      "black_hole_implosion": {
+        "name": "black_hole_implosion",
+        "effectType": "nukeExplosion",
+        "product": null,
+        "priceSoft": 2000,
+        "priceHard": 100,
+        "rarity": "legendary",
+        "attributes": {
+          "type": "shockwave",
+          "nukeType": "hydro",
+          "colors": ["#6b21a8", "#3b82f6", "#000000"],
+          "size": 25,
+          "speed": 15,
+          "thickness": 3,
+          "transitionSpeed": 1.5
+        }
+      },
+      "toxic_tsunami": {
+        "name": "toxic_tsunami",
+        "effectType": "nukeExplosion",
+        "product": null,
+        "priceSoft": 1400,
+        "priceHard": 70,
+        "rarity": "epic",
+        "attributes": {
+          "type": "embers",
+          "nukeType": "hydro",
+          "colors": ["#10b981", "#84cc16", "#064e3b"],
+          "size": 22,
+          "speed": 11,
+          "thickness": 2,
+          "transitionSpeed": 1,
+          "density": 50
+        }
+      },
+      "mirv_plasma_storm": {
+        "name": "mirv_plasma_storm",
+        "effectType": "nukeExplosion",
+        "product": null,
+        "priceSoft": 1600,
+        "priceHard": 80,
+        "rarity": "legendary",
+        "attributes": {
+          "type": "shockwave",
+          "nukeType": "mirvWarhead",
+          "colors": ["#f43f5e", "#8b5cf6", "#38bdf8"],
+          "size": 14,
+          "speed": 14,
+          "thickness": 1.8,
+          "transitionSpeed": 2
+        }
+      },
+      "mirv_cluster_sparks": {
+        "name": "mirv_cluster_sparks",
+        "effectType": "nukeExplosion",
+        "product": null,
+        "priceSoft": 1200,
+        "priceHard": 60,
+        "rarity": "epic",
+        "attributes": {
+          "type": "sparkles",
+          "nukeType": "mirvWarhead",
+          "colors": ["#f59e0b", "#ef4444", "#ffffff"],
+          "size": 12,
+          "speed": 16,
+          "thickness": 1.5,
+          "transitionSpeed": 2.5,
+          "density": 35
+        }
+      }
+    },
+    "structures": {
+      "cyber_grid": {
+        "name": "cyber_grid",
+        "effectType": "structures",
+        "product": null,
+        "priceSoft": 1500,
+        "priceHard": 75,
+        "rarity": "legendary",
+        "attributes": {
+          "type": "gradient",
+          "colors": ["#00f0ff", "#7000ff", "#ff007f"],
+          "colorSize": 1,
+          "movementSpeed": 0.5
+        }
+      },
+      "golden_citadel": {
+        "name": "golden_citadel",
+        "effectType": "structures",
+        "product": null,
+        "priceSoft": 1600,
+        "priceHard": 80,
+        "rarity": "legendary",
+        "attributes": {
+          "type": "gradient",
+          "colors": ["#fff2a3", "#ffd700", "#b45309"],
+          "colorSize": 1,
+          "movementSpeed": 0.3
+        }
+      },
+      "magma_forge": {
+        "name": "magma_forge",
+        "effectType": "structures",
+        "product": null,
+        "priceSoft": 1100,
+        "priceHard": 55,
+        "rarity": "epic",
+        "attributes": {
+          "type": "gradient",
+          "colors": ["#ff3700", "#ffaa00", "#7f1d1d"],
+          "colorSize": 1,
+          "movementSpeed": 0.4
+        }
+      },
+      "void_fortress": {
+        "name": "void_fortress",
+        "effectType": "structures",
+        "product": null,
+        "priceSoft": 1200,
+        "priceHard": 60,
+        "rarity": "epic",
+        "attributes": {
+          "type": "gradient",
+          "colors": ["#c026d3", "#4c1d95", "#030712"],
+          "colorSize": 1,
+          "movementSpeed": 0.35
+        }
+      },
+      "emerald_sanctuary": {
+        "name": "emerald_sanctuary",
+        "effectType": "structures",
+        "product": null,
+        "priceSoft": 800,
+        "priceHard": 40,
+        "rarity": "rare",
+        "attributes": {
+          "type": "gradient",
+          "colors": ["#34d399", "#059669", "#064e3b"],
+          "colorSize": 1,
+          "movementSpeed": 0.3
+        }
+      },
+      "frost_bastion": {
+        "name": "frost_bastion",
+        "effectType": "structures",
+        "product": null,
+        "priceSoft": 750,
+        "priceHard": 35,
+        "rarity": "rare",
+        "attributes": {
+          "type": "gradient",
+          "colors": ["#e0f2fe", "#38bdf8", "#0369a1"],
+          "colorSize": 1,
+          "movementSpeed": 0.25
+        }
+      }
+    },
+    "warship": {
+      "dreadnought_gold": {
+        "name": "dreadnought_gold",
+        "effectType": "warship",
+        "product": null,
+        "priceSoft": 1600,
+        "priceHard": 80,
+        "rarity": "legendary",
+        "attributes": {
+          "type": "gradient",
+          "colors": ["#ffe082", "#ffb300", "#78350f"],
+          "colorSize": 11,
+          "movementSpeed": 0.4
+        }
+      },
+      "leviathan_shadow": {
+        "name": "leviathan_shadow",
+        "effectType": "warship",
+        "product": null,
+        "priceSoft": 1500,
+        "priceHard": 75,
+        "rarity": "legendary",
+        "attributes": {
+          "type": "gradient",
+          "colors": ["#a855f7", "#3b82f6", "#0f172a"],
+          "colorSize": 11,
+          "movementSpeed": 0.5
+        }
+      },
+      "inferno_cruiser": {
+        "name": "inferno_cruiser",
+        "effectType": "warship",
+        "product": null,
+        "priceSoft": 1200,
+        "priceHard": 60,
+        "rarity": "epic",
+        "attributes": {
+          "type": "gradient",
+          "colors": ["#ff2200", "#ff8800", "#450a0a"],
+          "colorSize": 11,
+          "movementSpeed": 0.6
+        }
+      },
+      "neon_corvette": {
+        "name": "neon_corvette",
+        "effectType": "warship",
+        "product": null,
+        "priceSoft": 1150,
+        "priceHard": 55,
+        "rarity": "epic",
+        "attributes": {
+          "type": "gradient",
+          "colors": ["#00f0ff", "#ec4899", "#1e1b4b"],
+          "colorSize": 11,
+          "movementSpeed": 0.7
+        }
+      },
+      "glacial_destroyer": {
+        "name": "glacial_destroyer",
+        "effectType": "warship",
+        "product": null,
+        "priceSoft": 850,
+        "priceHard": 40,
+        "rarity": "rare",
+        "attributes": {
+          "type": "gradient",
+          "colors": ["#ffffff", "#38bdf8", "#0284c7"],
+          "colorSize": 11,
+          "movementSpeed": 0.4
+        }
+      },
+      "stealth_raider": {
+        "name": "stealth_raider",
+        "effectType": "warship",
+        "product": null,
+        "priceSoft": 750,
+        "priceHard": 35,
+        "rarity": "rare",
+        "attributes": {
+          "type": "gradient",
+          "colors": ["#64748b", "#334155", "#020617"],
+          "colorSize": 11,
+          "movementSpeed": 0.3
+        }
+      }
+    },
+    "train": {
+      "golden_express": {
+        "name": "golden_express",
+        "effectType": "train",
+        "product": null,
+        "priceSoft": 1400,
+        "priceHard": 70,
+        "rarity": "legendary",
+        "attributes": {
+          "type": "gradient",
+          "colors": ["#fef08a", "#eab308", "#854d0e"],
+          "colorSize": 10,
+          "movementSpeed": 0.5
+        }
+      },
+      "cyber_hyperloop": {
+        "name": "cyber_hyperloop",
+        "effectType": "train",
+        "product": null,
+        "priceSoft": 1500,
+        "priceHard": 75,
+        "rarity": "legendary",
+        "attributes": {
+          "type": "gradient",
+          "colors": ["#00f0ff", "#a855f7", "#ff007f"],
+          "colorSize": 8,
+          "movementSpeed": 0.8
+        }
+      },
+      "hellfire_locomotive": {
+        "name": "hellfire_locomotive",
+        "effectType": "train",
+        "product": null,
+        "priceSoft": 1100,
+        "priceHard": 55,
+        "rarity": "epic",
+        "attributes": {
+          "type": "gradient",
+          "colors": ["#dc2626", "#f97316", "#7c2d12"],
+          "colorSize": 9,
+          "movementSpeed": 0.6
+        }
+      },
+      "void_phantom_train": {
+        "name": "void_phantom_train",
+        "effectType": "train",
+        "product": null,
+        "priceSoft": 1050,
+        "priceHard": 50,
+        "rarity": "epic",
+        "attributes": {
+          "type": "gradient",
+          "colors": ["#c026d3", "#6b21a8", "#09090b"],
+          "colorSize": 10,
+          "movementSpeed": 0.45
+        }
+      },
+      "arctic_expedition": {
+        "name": "arctic_expedition",
+        "effectType": "train",
+        "product": null,
+        "priceSoft": 700,
+        "priceHard": 35,
+        "rarity": "rare",
+        "attributes": {
+          "type": "gradient",
+          "colors": ["#ffffff", "#7dd3fc", "#0369a1"],
+          "colorSize": 12,
+          "movementSpeed": 0.4
+        }
+      },
+      "emerald_merchant": {
+        "name": "emerald_merchant",
+        "effectType": "train",
+        "product": null,
+        "priceSoft": 650,
+        "priceHard": 30,
+        "rarity": "rare",
+        "attributes": {
+          "type": "gradient",
+          "colors": ["#34d399", "#059669", "#064e3b"],
+          "colorSize": 10,
+          "movementSpeed": 0.35
+        }
+      }
+    },
+    "railroad": {
+      "golden_rails": {
+        "name": "golden_rails",
+        "effectType": "railroad",
+        "product": null,
+        "priceSoft": 1450,
+        "priceHard": 70,
+        "rarity": "legendary",
+        "attributes": {
+          "type": "gradient",
+          "colors": ["#ffd700", "#d97706", "#78350f"],
+          "colorSize": 12,
+          "movementSpeed": 0.4
+        }
+      },
+      "cyber_fiber_track": {
+        "name": "cyber_fiber_track",
+        "effectType": "railroad",
+        "product": null,
+        "priceSoft": 1500,
+        "priceHard": 75,
+        "rarity": "legendary",
+        "attributes": {
+          "type": "gradient",
+          "colors": ["#00f0ff", "#6366f1", "#ec4899"],
+          "colorSize": 10,
+          "movementSpeed": 0.6
+        }
+      },
+      "magma_vein_track": {
+        "name": "magma_vein_track",
+        "effectType": "railroad",
+        "product": null,
+        "priceSoft": 1050,
+        "priceHard": 50,
+        "rarity": "epic",
+        "attributes": {
+          "type": "gradient",
+          "colors": ["#ff3300", "#ffaa00", "#450a0a"],
+          "colorSize": 10,
+          "movementSpeed": 0.5
+        }
+      },
+      "void_chasm_rails": {
+        "name": "void_chasm_rails",
+        "effectType": "railroad",
+        "product": null,
+        "priceSoft": 1000,
+        "priceHard": 50,
+        "rarity": "epic",
+        "attributes": {
+          "type": "gradient",
+          "colors": ["#a855f7", "#581c87", "#09090b"],
+          "colorSize": 12,
+          "movementSpeed": 0.35
+        }
+      },
+      "frost_crystal_rails": {
+        "name": "frost_crystal_rails",
+        "effectType": "railroad",
+        "product": null,
+        "priceSoft": 700,
+        "priceHard": 35,
+        "rarity": "rare",
+        "attributes": {
+          "type": "gradient",
+          "colors": ["#e0f2fe", "#38bdf8", "#0284c7"],
+          "colorSize": 14,
+          "movementSpeed": 0.3
+        }
+      },
+      "emerald_spine": {
+        "name": "emerald_spine",
+        "effectType": "railroad",
+        "product": null,
+        "priceSoft": 650,
+        "priceHard": 30,
+        "rarity": "rare",
+        "attributes": {
+          "type": "gradient",
+          "colors": ["#6ee7b7", "#10b981", "#064e3b"],
+          "colorSize": 12,
+          "movementSpeed": 0.3
+        }
+      }
+    }
+  },
+  "packs": {
+    "golden_emperor": {
+      "name": "golden_emperor",
+      "displayName": "بسته امپراتور زرین",
+      "description": "کامل‌ترین پک سلطنتی شامل پوسته طلایی + تاج امپراتور + پرچم شیر و خورشید + انفجار پلاسما",
+      "priceHard": 120,
+      "rarity": "legendary",
+      "items": [
+        {
+          "type": "pattern",
+          "name": "gold_leaf",
+          "colorPalette": "gold_leaf"
+        },
+        {
+          "type": "crown",
+          "name": "emperor_gold"
+        },
+        {
+          "type": "flag",
+          "name": "lion_sun"
+        },
+        {
+          "type": "effect",
+          "name": "plasma_nuke"
+        }
+      ]
+    },
+    "cyrus_legend": {
+      "name": "cyrus_legend",
+      "displayName": "بسته افسانه کوروش بزرگ",
+      "description": "پک شکوهمند ایران باستان شامل پوسته پارس سلطنتی + تاج کیانی کوروش + پرچم شاهنشاهی هخامنشی + انفجار سوپرنوا",
+      "priceHard": 150,
+      "rarity": "legendary",
+      "items": [
+        {
+          "type": "pattern",
+          "name": "royal_persia",
+          "colorPalette": "royal_persia"
+        },
+        {
+          "type": "crown",
+          "name": "cyrus_great"
+        },
+        {
+          "type": "flag",
+          "name": "achaemenid"
+        },
+        {
+          "type": "effect",
+          "name": "supernova_burst"
+        }
+      ]
+    },
+    "dark_monarch": {
+      "name": "dark_monarch",
+      "displayName": "بسته پادشاه تاریکی و سایه‌ها",
+      "description": "پک دارک فانتزی شامل پوسته مهبانگ تاریک + تاج پادشاه سایه‌ها + رد موشک رد آتشین + انفجار سیاهچاله",
+      "priceHard": 140,
+      "rarity": "legendary",
+      "items": [
+        {
+          "type": "pattern",
+          "name": "void_nebula",
+          "colorPalette": "void_nebula"
+        },
+        {
+          "type": "crown",
+          "name": "dark_monarch"
+        },
+        {
+          "type": "flag",
+          "name": "pirates"
+        },
+        {
+          "type": "effect",
+          "name": "black_hole_implosion"
+        }
+      ]
+    },
+    "phoenix_rising": {
+      "name": "phoenix_rising",
+      "displayName": "بسته صعود سیمرغ آتشین",
+      "description": "پک آتشین شامل پوسته اژدهای سرخ + تاج سیمرغ + رد صاعقه موشک + رد آتشین ناوگان",
+      "priceHard": 110,
+      "rarity": "epic",
+      "items": [
+        {
+          "type": "pattern",
+          "name": "crimson_dragon",
+          "colorPalette": "crimson_dragon"
+        },
+        {
+          "type": "crown",
+          "name": "phoenix_flame"
+        },
+        {
+          "type": "effect",
+          "name": "hellfire_missile"
+        },
+        {
+          "type": "effect",
+          "name": "fire_trail"
+        }
+      ]
+    },
+    "frost_valkyrie": {
+      "name": "frost_valkyrie",
+      "displayName": "بسته ملکه یخبندان",
+      "description": "پک الماسین شامل پوسته تایتان یخی + دیهیم ملکه یخی + رد یخی ناوگان",
+      "priceHard": 95,
+      "rarity": "epic",
+      "items": [
+        {
+          "type": "pattern",
+          "name": "frost_titan",
+          "colorPalette": "frost_titan"
+        },
+        {
+          "type": "crown",
+          "name": "frost_valkyrie"
+        },
+        {
+          "type": "effect",
+          "name": "frost_drift"
+        }
+      ]
+    },
+    "cyber_warlord": {
+      "name": "cyber_warlord",
+      "displayName": "بسته جنگجوی سایبری",
+      "description": "پک آینده‌نگرانه شامل پوسته سایبرپانک + تاج هولوگرام نئونی + رد اسپیرال کوانتومی",
+      "priceHard": 105,
+      "rarity": "epic",
+      "items": [
+        {
+          "type": "pattern",
+          "name": "cyberpunk",
+          "colorPalette": "cyberpunk"
+        },
+        {
+          "type": "crown",
+          "name": "cyber_neon"
+        },
+        {
+          "type": "effect",
+          "name": "quantum_spiral"
+        }
+      ]
+    },
+    "iron_general": {
+      "name": "iron_general",
+      "displayName": "بسته ژنرال پولادین",
+      "description": "شامل پوسته فیبر کربن + یال نبرد اسپارتان + پرچم اسپارت",
+      "priceHard": 60,
+      "rarity": "rare",
+      "items": [
+        {
+          "type": "pattern",
+          "name": "carbon_fiber",
+          "colorPalette": "carbon_fiber"
+        },
+        {
+          "type": "crown",
+          "name": "spartan_warlord"
+        },
+        {
+          "type": "flag",
+          "name": "sparta"
+        }
+      ]
+    }
+  },
+  "currencyPacks": {
+    "coins_pouch": {
+      "name": "coins_pouch",
+      "displayName": "کیسه سکه ۵۰۰تایی",
+      "currency": "soft",
+      "amount": 500,
+      "bonusAmount": 50,
+      "rarity": "common",
+      "priceHard": 20,
+      "product": null
+    },
+    "coins_chest": {
+      "name": "coins_chest",
+      "displayName": "صندوق سکه ۱۵۰۰تایی",
+      "currency": "soft",
+      "amount": 1500,
+      "bonusAmount": 200,
+      "rarity": "rare",
+      "priceHard": 50,
+      "product": null
+    },
+    "coins_vault": {
+      "name": "coins_vault",
+      "displayName": "خزانه سکه ۵۰۰۰تایی",
+      "currency": "soft",
+      "amount": 5000,
+      "bonusAmount": 1000,
+      "rarity": "legendary",
+      "priceHard": 150,
+      "product": null
+    },
+    "gems_pouch": {
+      "name": "gems_pouch",
+      "displayName": "کیسه الماس ۱۰۰تایی",
+      "currency": "hard",
+      "amount": 100,
+      "bonusAmount": 10,
+      "rarity": "rare",
+      "priceSoft": 2000,
+      "product": null
+    },
+    "gems_chest": {
+      "name": "gems_chest",
+      "displayName": "صندوق الماس ۳۰۰تایی",
+      "currency": "hard",
+      "amount": 300,
+      "bonusAmount": 50,
+      "rarity": "epic",
+      "priceSoft": 5500,
+      "product": null
+    },
+    "gems_treasury": {
+      "name": "gems_treasury",
+      "displayName": "گنجینه سلطنتی ۱۰۰۰ الماس",
+      "currency": "hard",
+      "amount": 1000,
+      "bonusAmount": 250,
+      "rarity": "legendary",
+      "priceSoft": 16000,
+      "product": null
+    }
+  }
+}

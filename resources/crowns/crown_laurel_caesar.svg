@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="laurel_gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF08A"/>
+      <stop offset="35%" stop-color="#FACC15"/>
+      <stop offset="70%" stop-color="#CA8A04"/>
+      <stop offset="100%" stop-color="#854D0E"/>
+    </linearGradient>
+    <radialGradient id="caesar_ruby" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FDA4AF"/>
+      <stop offset="40%" stop-color="#E11D48"/>
+      <stop offset="85%" stop-color="#881337"/>
+      <stop offset="100%" stop-color="#4C0519"/>
+    </radialGradient>
+    <filter id="laurel_glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3.5" flood-color="#EAB308" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#laurel_glow)">
+    <!-- Laurel Wreath Branches (Left & Right Stems) -->
+    <path d="M64 96 C40 96 16 82 14 46 C12 28 26 14 36 12" fill="none" stroke="url(#laurel_gold)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M64 96 C88 96 112 82 114 46 C116 28 102 14 92 12" fill="none" stroke="url(#laurel_gold)" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Left Laurel Leaves -->
+    <!-- Top Cluster -->
+    <path d="M36 12 Q24 16 22 26 Q32 24 36 12 Z" fill="url(#laurel_gold)" stroke="#713F12" stroke-width="0.8"/>
+    <path d="M34 16 Q36 28 44 32 Q42 20 34 16 Z" fill="url(#laurel_gold)" stroke="#713F12" stroke-width="0.8"/>
+    <!-- Upper Mid Cluster -->
+    <path d="M22 28 Q12 36 14 48 Q24 42 22 28 Z" fill="url(#laurel_gold)" stroke="#713F12" stroke-width="0.8"/>
+    <path d="M24 38 Q30 48 38 52 Q34 40 24 38 Z" fill="url(#laurel_gold)" stroke="#713F12" stroke-width="0.8"/>
+    <!-- Mid Cluster -->
+    <path d="M16 50 Q10 62 18 72 Q24 62 16 50 Z" fill="url(#laurel_gold)" stroke="#713F12" stroke-width="0.8"/>
+    <path d="M22 58 Q32 66 40 68 Q34 56 22 58 Z" fill="url(#laurel_gold)" stroke="#713F12" stroke-width="0.8"/>
+    <!-- Lower Cluster -->
+    <path d="M22 74 Q24 86 36 90 Q34 78 22 74 Z" fill="url(#laurel_gold)" stroke="#713F12" stroke-width="0.8"/>
+    <path d="M36 78 Q46 86 54 86 Q46 76 36 78 Z" fill="url(#laurel_gold)" stroke="#713F12" stroke-width="0.8"/>
+
+    <!-- Right Laurel Leaves -->
+    <!-- Top Cluster -->
+    <path d="M92 12 Q104 16 106 26 Q96 24 92 12 Z" fill="url(#laurel_gold)" stroke="#713F12" stroke-width="0.8"/>
+    <path d="M94 16 Q92 28 84 32 Q86 20 94 16 Z" fill="url(#laurel_gold)" stroke="#713F12" stroke-width="0.8"/>
+    <!-- Upper Mid Cluster -->
+    <path d="M106 28 Q116 36 114 48 Q104 42 106 28 Z" fill="url(#laurel_gold)" stroke="#713F12" stroke-width="0.8"/>
+    <path d="M104 38 Q98 48 90 52 Q94 40 104 38 Z" fill="url(#laurel_gold)" stroke="#713F12" stroke-width="0.8"/>
+    <!-- Mid Cluster -->
+    <path d="M112 50 Q118 62 110 72 Q104 62 112 50 Z" fill="url(#laurel_gold)" stroke="#713F12" stroke-width="0.8"/>
+    <path d="M106 58 Q96 66 88 68 Q94 56 106 58 Z" fill="url(#laurel_gold)" stroke="#713F12" stroke-width="0.8"/>
+    <!-- Lower Cluster -->
+    <path d="M106 74 Q104 86 92 90 Q94 78 106 74 Z" fill="url(#laurel_gold)" stroke="#713F12" stroke-width="0.8"/>
+    <path d="M92 78 Q82 86 74 86 Q82 76 92 78 Z" fill="url(#laurel_gold)" stroke="#713F12" stroke-width="0.8"/>
+
+    <!-- Fine Ribs on Leaves -->
+    <g stroke="#FEF08A" stroke-width="0.8" opacity="0.6">
+      <line x1="36" y1="12" x2="26" y2="22"/>
+      <line x1="92" y1="12" x2="102" y2="22"/>
+      <line x1="22" y1="28" x2="16" y2="40"/>
+      <line x1="106" y1="28" x2="112" y2="40"/>
+      <line x1="16" y1="50" x2="16" y2="64"/>
+      <line x1="112" y1="50" x2="112" y2="64"/>
+    </g>
+
+    <!-- Golden Ribbon Knot at Base -->
+    <path d="M54 94 C56 102 46 112 38 116 C48 112 56 106 60 98 Z" fill="url(#laurel_gold)" stroke="#713F12" stroke-width="1"/>
+    <path d="M74 94 C72 102 82 112 90 116 C80 112 72 106 68 98 Z" fill="url(#laurel_gold)" stroke="#713F12" stroke-width="1"/>
+
+    <!-- Central Imperial Sun Medallion -->
+    <circle cx="64" cy="96" r="13" fill="url(#laurel_gold)" stroke="#713F12" stroke-width="2"/>
+    <circle cx="64" cy="96" r="10" fill="#CA8A04"/>
+    <circle cx="64" cy="96" r="7" fill="url(#caesar_ruby)" stroke="#FEF08A" stroke-width="1.5"/>
+    <circle cx="64" cy="94" r="2" fill="#FFFFFF" opacity="0.8"/>
+  </g>
+</svg>

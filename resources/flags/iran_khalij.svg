@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
+  <defs>
+    <clipPath id="rounded">
+      <rect width="150" height="150" rx="16" />
+    </clipPath>
+  </defs>
+  <g clip-path="url(#rounded)">
+    <!-- Tricolor Bands: Green, White, Red -->
+    <rect x="0" y="0" width="150" height="50" fill="#16a34a"/>
+    <rect x="0" y="50" width="150" height="50" fill="#f8fafc"/>
+    <rect x="0" y="100" width="150" height="50" fill="#dc2626"/>
+    <!-- Persian Gulf Golden Lion & Sun Emblem -->
+    <circle cx="75" cy="75" r="22" fill="#fef08a" stroke="#d97706" stroke-width="2" opacity="0.3"/>
+    <!-- Sun Rays Behind Center -->
+    <path d="M75,54 L77,65 L88,67 L79,73 L83,83 L75,77 L67,83 L71,73 L62,67 L73,65 Z" fill="#d97706"/>
+    <!-- Center Golden Lion Silhouette / Sun Symbol -->
+    <circle cx="75" cy="75" r="10" fill="#f59e0b" stroke="#b45309" stroke-width="2"/>
+    <circle cx="75" cy="75" r="4" fill="#fef08a"/>
+    <!-- Border -->
+    <rect x="0" y="0" width="150" height="150" rx="16" fill="none" stroke="#f59e0b" stroke-width="4"/>
+  </g>
+</svg>

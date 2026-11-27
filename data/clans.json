@@ -1,0 +1,786 @@
+[
+  {
+    "tag": "IRN",
+    "name": "Iran Warriors",
+    "description": "Official top competitive Persian squad. Join for tactical warfare!",
+    "discordUrl": "https://discord.gg/openfront",
+    "isOpen": true,
+    "createdAt": "2026-08-19T05:08:32.430Z",
+    "softBalance": "25000",
+    "hardBalance": "450",
+    "members": [
+      {
+        "publicId": "usr_8949368d1377",
+        "username": "General_Sorena",
+        "role": "leader",
+        "joinedAt": "2026-08-19T05:08:32.430Z",
+        "wins": 142,
+        "losses": 18
+      },
+      {
+        "publicId": "usr_4155432b6da6",
+        "username": "Iron_Hunter",
+        "role": "officer",
+        "joinedAt": "2026-09-08T05:08:32.430Z",
+        "wins": 110,
+        "losses": 25
+      }
+    ],
+    "bans": [],
+    "donations": [
+      {
+        "publicId": "usr_8949368d1377",
+        "username": "General_Sorena",
+        "currencyType": "soft",
+        "amount": 15000,
+        "timestamp": "2026-10-18T05:08:32.430Z"
+      }
+    ],
+    "joinRequests": [],
+    "stats": {
+      "games": 252,
+      "wins": 210,
+      "losses": 42,
+      "playerSessions": 380,
+      "weightedWins": 245.5,
+      "weightedLosses": 38.2,
+      "weightedWLRatio": 6.42
+    }
+  },
+  {
+    "tag": "PERS",
+    "name": "Persian Empire",
+    "description": "Unite the empires and conquer every frontier across the globe.",
+    "discordUrl": null,
+    "isOpen": true,
+    "createdAt": "2026-09-03T05:08:32.430Z",
+    "softBalance": "18000",
+    "hardBalance": "320",
+    "members": [
+      {
+        "publicId": "usr_f4d831dd9ff7",
+        "username": "Ariobarzan",
+        "role": "leader",
+        "joinedAt": "2026-09-03T05:08:32.430Z",
+        "wins": 95,
+        "losses": 30
+      }
+    ],
+    "bans": [],
+    "donations": [],
+    "joinRequests": [],
+    "stats": {
+      "games": 160,
+      "wins": 125,
+      "losses": 35,
+      "playerSessions": 210,
+      "weightedWins": 138,
+      "weightedLosses": 32.5,
+      "weightedWLRatio": 4.24
+    }
+  },
+  {
+    "tag": "APEX",
+    "name": "Apex Legends",
+    "description": "Hardcore strategy, global dominators and ranked rushers.",
+    "discordUrl": null,
+    "isOpen": false,
+    "createdAt": "2026-09-18T05:08:32.430Z",
+    "softBalance": "35000",
+    "hardBalance": "600",
+    "members": [
+      {
+        "publicId": "usr_3643a8d0ef58",
+        "username": "Desert_Eagle",
+        "role": "leader",
+        "joinedAt": "2026-09-18T05:08:32.430Z",
+        "wins": 78,
+        "losses": 29
+      }
+    ],
+    "bans": [],
+    "donations": [],
+    "joinRequests": [],
+    "stats": {
+      "games": 130,
+      "wins": 98,
+      "losses": 32,
+      "playerSessions": 175,
+      "weightedWins": 112.4,
+      "weightedLosses": 29.1,
+      "weightedWLRatio": 3.86
+    }
+  },
+  {
+    "tag": "ALP18",
+    "name": "Alpha Division",
+    "description": "Elite operational testing clan",
+    "discordUrl": null,
+    "isOpen": true,
+    "createdAt": "2026-10-18T17:45:56.769Z",
+    "softBalance": "200",
+    "hardBalance": "0",
+    "members": [
+      {
+        "publicId": "usr_57fa005768badb2b",
+        "username": "AlphaPlayer_7552",
+        "role": "leader",
+        "joinedAt": "2026-10-18T17:45:56.769Z",
+        "wins": 0,
+        "losses": 0
+      },
+      {
+        "publicId": "usr_d0d8f44f994e9afb",
+        "username": "BetaPlayer_4315",
+        "role": "member",
+        "joinedAt": "2026-10-18T17:45:56.803Z",
+        "wins": 0,
+        "losses": 0
+      }
+    ],
+    "bans": [],
+    "donations": [
+      {
+        "publicId": "usr_d0d8f44f994e9afb",
+        "username": "BetaPlayer_4315",
+        "currencyType": "soft",
+        "amount": 200,
+        "timestamp": "2026-10-18T17:45:56.807Z"
+      }
+    ],
+    "joinRequests": [],
+    "stats": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "playerSessions": 0,
+      "weightedWins": 0,
+      "weightedLosses": 0,
+      "weightedWLRatio": 0
+    }
+  },
+  {
+    "tag": "ALP64",
+    "name": "Alpha Division",
+    "description": "Elite operational testing clan",
+    "discordUrl": null,
+    "isOpen": true,
+    "createdAt": "2026-10-19T02:57:11.960Z",
+    "softBalance": "200",
+    "hardBalance": "0",
+    "members": [
+      {
+        "publicId": "usr_5a5f370642115a0b",
+        "username": "AlphaPlayer_4542",
+        "role": "leader",
+        "joinedAt": "2026-10-19T02:57:11.960Z",
+        "wins": 0,
+        "losses": 0
+      },
+      {
+        "publicId": "usr_0f302c33de093f3b",
+        "username": "BetaPlayer_3938",
+        "role": "member",
+        "joinedAt": "2026-10-19T02:57:11.997Z",
+        "wins": 0,
+        "losses": 0
+      }
+    ],
+    "bans": [],
+    "donations": [
+      {
+        "publicId": "usr_0f302c33de093f3b",
+        "username": "BetaPlayer_3938",
+        "currencyType": "soft",
+        "amount": 200,
+        "timestamp": "2026-10-19T02:57:11.999Z"
+      }
+    ],
+    "joinRequests": [],
+    "stats": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "playerSessions": 0,
+      "weightedWins": 0,
+      "weightedLosses": 0,
+      "weightedWLRatio": 0
+    }
+  },
+  {
+    "tag": "ALP65",
+    "name": "Alpha Division",
+    "description": "Elite operational testing clan",
+    "discordUrl": null,
+    "isOpen": true,
+    "createdAt": "2026-10-19T06:17:28.376Z",
+    "softBalance": "200",
+    "hardBalance": "0",
+    "members": [
+      {
+        "publicId": "usr_f18c87a7d92dba2c",
+        "username": "AlphaPlayer_3989",
+        "role": "leader",
+        "joinedAt": "2026-10-19T06:17:28.376Z",
+        "wins": 0,
+        "losses": 0
+      },
+      {
+        "publicId": "usr_a2ee53b8749682a0",
+        "username": "BetaPlayer_6741",
+        "role": "member",
+        "joinedAt": "2026-10-19T06:17:28.410Z",
+        "wins": 0,
+        "losses": 0
+      }
+    ],
+    "bans": [],
+    "donations": [
+      {
+        "publicId": "usr_a2ee53b8749682a0",
+        "username": "BetaPlayer_6741",
+        "currencyType": "soft",
+        "amount": 200,
+        "timestamp": "2026-10-19T06:17:28.412Z"
+      }
+    ],
+    "joinRequests": [],
+    "stats": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "playerSessions": 0,
+      "weightedWins": 0,
+      "weightedLosses": 0,
+      "weightedWLRatio": 0
+    }
+  },
+  {
+    "tag": "ALP57",
+    "name": "Alpha Division",
+    "description": "Elite operational testing clan",
+    "discordUrl": null,
+    "isOpen": true,
+    "createdAt": "2026-10-19T06:39:15.096Z",
+    "softBalance": "200",
+    "hardBalance": "0",
+    "members": [
+      {
+        "publicId": "usr_e14f714bf69aab85",
+        "username": "AlphaPlayer_3189",
+        "role": "leader",
+        "joinedAt": "2026-10-19T06:39:15.096Z",
+        "wins": 0,
+        "losses": 0
+      },
+      {
+        "publicId": "usr_50d326b3c48598db",
+        "username": "BetaPlayer_4541",
+        "role": "member",
+        "joinedAt": "2026-10-19T06:39:15.131Z",
+        "wins": 0,
+        "losses": 0
+      }
+    ],
+    "bans": [],
+    "donations": [
+      {
+        "publicId": "usr_50d326b3c48598db",
+        "username": "BetaPlayer_4541",
+        "currencyType": "soft",
+        "amount": 200,
+        "timestamp": "2026-10-19T06:39:15.134Z"
+      }
+    ],
+    "joinRequests": [],
+    "stats": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "playerSessions": 0,
+      "weightedWins": 0,
+      "weightedLosses": 0,
+      "weightedWLRatio": 0
+    }
+  },
+  {
+    "tag": "ALP10",
+    "name": "Alpha Division",
+    "description": "Elite operational testing clan",
+    "discordUrl": null,
+    "isOpen": true,
+    "createdAt": "2026-10-19T07:14:49.773Z",
+    "softBalance": "200",
+    "hardBalance": "0",
+    "members": [
+      {
+        "publicId": "usr_b559314e298f19a8",
+        "username": "AlphaPlayer_3173",
+        "role": "leader",
+        "joinedAt": "2026-10-19T07:14:49.773Z",
+        "wins": 0,
+        "losses": 0
+      },
+      {
+        "publicId": "usr_15774004ddc737ec",
+        "username": "BetaPlayer_9124",
+        "role": "member",
+        "joinedAt": "2026-10-19T07:14:49.819Z",
+        "wins": 0,
+        "losses": 0
+      }
+    ],
+    "bans": [],
+    "donations": [
+      {
+        "publicId": "usr_15774004ddc737ec",
+        "username": "BetaPlayer_9124",
+        "currencyType": "soft",
+        "amount": 200,
+        "timestamp": "2026-10-19T07:14:49.822Z"
+      }
+    ],
+    "joinRequests": [],
+    "stats": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "playerSessions": 0,
+      "weightedWins": 0,
+      "weightedLosses": 0,
+      "weightedWLRatio": 0
+    }
+  },
+  {
+    "tag": "ALP12",
+    "name": "Alpha Division",
+    "description": "Elite operational testing clan",
+    "discordUrl": null,
+    "isOpen": true,
+    "createdAt": "2026-10-19T09:01:31.144Z",
+    "softBalance": "200",
+    "hardBalance": "0",
+    "members": [
+      {
+        "publicId": "usr_53482b4fbfd7c711",
+        "username": "AlphaPlayer_8242",
+        "role": "leader",
+        "joinedAt": "2026-10-19T09:01:31.144Z",
+        "wins": 0,
+        "losses": 0
+      },
+      {
+        "publicId": "usr_6c01ce16f4977042",
+        "username": "BetaPlayer_3362",
+        "role": "member",
+        "joinedAt": "2026-10-19T09:01:31.188Z",
+        "wins": 0,
+        "losses": 0
+      }
+    ],
+    "bans": [],
+    "donations": [
+      {
+        "publicId": "usr_6c01ce16f4977042",
+        "username": "BetaPlayer_3362",
+        "currencyType": "soft",
+        "amount": 200,
+        "timestamp": "2026-10-19T09:01:31.193Z"
+      }
+    ],
+    "joinRequests": [],
+    "stats": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "playerSessions": 0,
+      "weightedWins": 0,
+      "weightedLosses": 0,
+      "weightedWLRatio": 0
+    }
+  },
+  {
+    "tag": "ALP54",
+    "name": "Alpha Division",
+    "description": "Elite operational testing clan",
+    "discordUrl": null,
+    "isOpen": true,
+    "createdAt": "2026-10-19T10:22:03.617Z",
+    "softBalance": "200",
+    "hardBalance": "0",
+    "members": [
+      {
+        "publicId": "usr_b6e86df067eb7d6b",
+        "username": "AlphaPlayer_5989",
+        "role": "leader",
+        "joinedAt": "2026-10-19T10:22:03.617Z",
+        "wins": 0,
+        "losses": 0
+      },
+      {
+        "publicId": "usr_75189a6b51eb244f",
+        "username": "BetaPlayer_6563",
+        "role": "member",
+        "joinedAt": "2026-10-19T10:22:03.667Z",
+        "wins": 0,
+        "losses": 0
+      }
+    ],
+    "bans": [],
+    "donations": [
+      {
+        "publicId": "usr_75189a6b51eb244f",
+        "username": "BetaPlayer_6563",
+        "currencyType": "soft",
+        "amount": 200,
+        "timestamp": "2026-10-19T10:22:03.670Z"
+      }
+    ],
+    "joinRequests": [],
+    "stats": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "playerSessions": 0,
+      "weightedWins": 0,
+      "weightedLosses": 0,
+      "weightedWLRatio": 0
+    }
+  },
+  {
+    "tag": "A4DKD",
+    "name": "Alpha Division",
+    "description": "Elite operational testing clan",
+    "discordUrl": null,
+    "isOpen": true,
+    "createdAt": "2026-10-19T10:36:59.873Z",
+    "softBalance": "200",
+    "hardBalance": "0",
+    "members": [
+      {
+        "publicId": "usr_9adc23c6f40c0cae",
+        "username": "AlphaPlayer_8482",
+        "role": "leader",
+        "joinedAt": "2026-10-19T10:36:59.873Z",
+        "wins": 0,
+        "losses": 0
+      },
+      {
+        "publicId": "usr_46f784f44ffa34bf",
+        "username": "BetaPlayer_6751",
+        "role": "member",
+        "joinedAt": "2026-10-19T10:36:59.910Z",
+        "wins": 0,
+        "losses": 0
+      }
+    ],
+    "bans": [],
+    "donations": [
+      {
+        "publicId": "usr_46f784f44ffa34bf",
+        "username": "BetaPlayer_6751",
+        "currencyType": "soft",
+        "amount": 200,
+        "timestamp": "2026-10-19T10:36:59.913Z"
+      }
+    ],
+    "joinRequests": [],
+    "stats": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "playerSessions": 0,
+      "weightedWins": 0,
+      "weightedLosses": 0,
+      "weightedWLRatio": 0
+    }
+  },
+  {
+    "tag": "A6C6N",
+    "name": "Alpha Division",
+    "description": "Elite operational testing clan",
+    "discordUrl": null,
+    "isOpen": true,
+    "createdAt": "2026-10-19T10:51:05.279Z",
+    "softBalance": "200",
+    "hardBalance": "0",
+    "members": [
+      {
+        "publicId": "usr_8a64f9930bba6d56",
+        "username": "AlphaPlayer_4084",
+        "role": "leader",
+        "joinedAt": "2026-10-19T10:51:05.279Z",
+        "wins": 0,
+        "losses": 0
+      },
+      {
+        "publicId": "usr_30961038aed4c63e",
+        "username": "BetaPlayer_5437",
+        "role": "member",
+        "joinedAt": "2026-10-19T10:51:05.328Z",
+        "wins": 0,
+        "losses": 0
+      }
+    ],
+    "bans": [],
+    "donations": [
+      {
+        "publicId": "usr_30961038aed4c63e",
+        "username": "BetaPlayer_5437",
+        "currencyType": "soft",
+        "amount": 200,
+        "timestamp": "2026-10-19T10:51:05.331Z"
+      }
+    ],
+    "joinRequests": [],
+    "stats": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "playerSessions": 0,
+      "weightedWins": 0,
+      "weightedLosses": 0,
+      "weightedWLRatio": 0
+    }
+  },
+  {
+    "tag": "AL0N9",
+    "name": "Alpha Division",
+    "description": "Elite operational testing clan",
+    "discordUrl": null,
+    "isOpen": true,
+    "createdAt": "2026-10-19T12:46:38.425Z",
+    "softBalance": "200",
+    "hardBalance": "0",
+    "members": [
+      {
+        "publicId": "usr_c9b348dbc43a5a0e",
+        "username": "AlphaPlayer_5137",
+        "role": "leader",
+        "joinedAt": "2026-10-19T12:46:38.425Z",
+        "wins": 0,
+        "losses": 0
+      },
+      {
+        "publicId": "usr_fb583c028732ca55",
+        "username": "BetaPlayer_2438",
+        "role": "member",
+        "joinedAt": "2026-10-19T12:46:38.461Z",
+        "wins": 0,
+        "losses": 0
+      }
+    ],
+    "bans": [],
+    "donations": [
+      {
+        "publicId": "usr_fb583c028732ca55",
+        "username": "BetaPlayer_2438",
+        "currencyType": "soft",
+        "amount": 200,
+        "timestamp": "2026-10-19T12:46:38.465Z"
+      }
+    ],
+    "joinRequests": [],
+    "stats": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "playerSessions": 0,
+      "weightedWins": 0,
+      "weightedLosses": 0,
+      "weightedWLRatio": 0
+    }
+  },
+  {
+    "tag": "AVQTD",
+    "name": "Alpha Division",
+    "description": "Elite operational testing clan",
+    "discordUrl": null,
+    "isOpen": true,
+    "createdAt": "2026-10-19T12:59:58.824Z",
+    "softBalance": "200",
+    "hardBalance": "0",
+    "members": [
+      {
+        "publicId": "usr_b6e31788e3bf76e5",
+        "username": "AlphaPlayer_5780",
+        "role": "leader",
+        "joinedAt": "2026-10-19T12:59:58.824Z",
+        "wins": 0,
+        "losses": 0
+      },
+      {
+        "publicId": "usr_024793edb474357e",
+        "username": "BetaPlayer_4166",
+        "role": "member",
+        "joinedAt": "2026-10-19T12:59:58.864Z",
+        "wins": 0,
+        "losses": 0
+      }
+    ],
+    "bans": [],
+    "donations": [
+      {
+        "publicId": "usr_024793edb474357e",
+        "username": "BetaPlayer_4166",
+        "currencyType": "soft",
+        "amount": 200,
+        "timestamp": "2026-10-19T12:59:58.868Z"
+      }
+    ],
+    "joinRequests": [],
+    "stats": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "playerSessions": 0,
+      "weightedWins": 0,
+      "weightedLosses": 0,
+      "weightedWLRatio": 0
+    }
+  },
+  {
+    "tag": "AK2DX",
+    "name": "Alpha Division",
+    "description": "Elite operational testing clan",
+    "discordUrl": null,
+    "isOpen": true,
+    "createdAt": "2026-10-19T13:17:54.527Z",
+    "softBalance": "200",
+    "hardBalance": "0",
+    "members": [
+      {
+        "publicId": "usr_bfcf84352c7bd6ec",
+        "username": "AlphaPlayer_6376",
+        "role": "leader",
+        "joinedAt": "2026-10-19T13:17:54.527Z",
+        "wins": 0,
+        "losses": 0
+      },
+      {
+        "publicId": "usr_479460c4c5904d67",
+        "username": "BetaPlayer_2855",
+        "role": "member",
+        "joinedAt": "2026-10-19T13:17:54.563Z",
+        "wins": 0,
+        "losses": 0
+      }
+    ],
+    "bans": [],
+    "donations": [
+      {
+        "publicId": "usr_479460c4c5904d67",
+        "username": "BetaPlayer_2855",
+        "currencyType": "soft",
+        "amount": 200,
+        "timestamp": "2026-10-19T13:17:54.565Z"
+      }
+    ],
+    "joinRequests": [],
+    "stats": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "playerSessions": 0,
+      "weightedWins": 0,
+      "weightedLosses": 0,
+      "weightedWLRatio": 0
+    }
+  },
+  {
+    "tag": "AOGKY",
+    "name": "Alpha Division",
+    "description": "Elite operational testing clan",
+    "discordUrl": null,
+    "isOpen": true,
+    "createdAt": "2026-10-19T14:02:59.488Z",
+    "softBalance": "200",
+    "hardBalance": "0",
+    "members": [
+      {
+        "publicId": "usr_2ba8ad5a57d627d4",
+        "username": "AlphaPlayer_5515",
+        "role": "leader",
+        "joinedAt": "2026-10-19T14:02:59.488Z",
+        "wins": 0,
+        "losses": 0
+      },
+      {
+        "publicId": "usr_0da92aa8841cbb1f",
+        "username": "BetaPlayer_3723",
+        "role": "member",
+        "joinedAt": "2026-10-19T14:02:59.539Z",
+        "wins": 0,
+        "losses": 0
+      }
+    ],
+    "bans": [],
+    "donations": [
+      {
+        "publicId": "usr_0da92aa8841cbb1f",
+        "username": "BetaPlayer_3723",
+        "currencyType": "soft",
+        "amount": 200,
+        "timestamp": "2026-10-19T14:02:59.543Z"
+      }
+    ],
+    "joinRequests": [],
+    "stats": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "playerSessions": 0,
+      "weightedWins": 0,
+      "weightedLosses": 0,
+      "weightedWLRatio": 0
+    }
+  },
+  {
+    "tag": "A31AD",
+    "name": "Alpha Division",
+    "description": "Elite operational testing clan",
+    "discordUrl": null,
+    "isOpen": true,
+    "createdAt": "2026-10-19T14:07:46.845Z",
+    "softBalance": "200",
+    "hardBalance": "0",
+    "members": [
+      {
+        "publicId": "usr_0219f7453da3d151",
+        "username": "AlphaPlayer_6415",
+        "role": "leader",
+        "joinedAt": "2026-10-19T14:07:46.845Z",
+        "wins": 0,
+        "losses": 0
+      },
+      {
+        "publicId": "usr_8cf55ab20729cf99",
+        "username": "BetaPlayer_1393",
+        "role": "member",
+        "joinedAt": "2026-10-19T14:07:46.886Z",
+        "wins": 0,
+        "losses": 0
+      }
+    ],
+    "bans": [],
+    "donations": [
+      {
+        "publicId": "usr_8cf55ab20729cf99",
+        "username": "BetaPlayer_1393",
+        "currencyType": "soft",
+        "amount": 200,
+        "timestamp": "2026-10-19T14:07:46.888Z"
+      }
+    ],
+    "joinRequests": [],
+    "stats": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "playerSessions": 0,
+      "weightedWins": 0,
+      "weightedLosses": 0,
+      "weightedWLRatio": 0
+    }
+  }
+]

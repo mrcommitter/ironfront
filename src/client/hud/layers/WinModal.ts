@@ -1,0 +1,404 @@
+import { html, LitElement, TemplateResult } from "lit";
+import { customElement, state } from "lit/decorators.js";
+import {
+  DESKTOP_TUTORIAL_VIDEO_URL,
+  getGamesPlayed,
+  homeHref,
+  isInIframe,
+  translateText,
+  TUTORIAL_VIDEO_URL,
+} from "../../../client/Utils";
+import { Pattern } from "../../../core/CosmeticSchemas";
+import { EventBus } from "../../../core/EventBus";
+import { RankedType } from "../../../core/game/Game";
+import { GameUpdateType } from "../../../core/game/GameUpdates";
+import { getUserMe } from "../../Api";
+import "../../components/CosmeticCard";
+import { cosmeticSelectionLabel } from "../../components/CosmeticPresentation";
+import "../../components/PurchaseButton";
+import { Controller } from "../../Controller";
+import {
+  fetchCosmetics,
+  purchaseCosmetic,
+  resolveCosmetics,
+} from "../../Cosmetics";
+import { crazyGamesSDK } from "../../CrazyGamesSDK";
+import { isDesktopShell } from "../../DesktopShell";
+import { Platform } from "../../Platform";
+import { PlaySoundEffectEvent } from "../../sound/Sounds";
+import { steamSDK } from "../../SteamSDK";
+import { SendWinnerEvent } from "../../Transport";
+import { GameView } from "../../view";
+import { modalRouter } from "../../ModalRouter";
+import { MatchHistoryStore } from "../../MatchHistoryStore";
+import { AccountService } from "../../AccountService";
+
+@customElement("win-modal")
+export class WinModal extends LitElement implements Controller {
+  public game: GameView;
+  public eventBus: EventBus;
+
+  private hasShownDeathModal = false;
+
+  @state()
+  isVisible = false;
+
+  @state()
+  private isWin = false;
+
+  @state()
+  private isRankedGame = false;
+
+  @state()
+  private patternContent: TemplateResult | null = null;
+
+  private _title: string;
+
+  private rand = Math.random();
+
+  // Override to prevent shadow DOM creation
+  createRenderRoot() {
+    return this;
+  }
+
+  constructor() {
+    super();
+  }
+
+  render() {
+    return html`
+      <div
+        class="${this.isVisible
+          ? "fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gray-800/70 p-4 md:p-6 shrink-0 rounded-lg z-[10010] shadow-2xl backdrop-blur-xs text-white w-[min(90vw,700px)] max-w-[90%] max-h-[90dvh] overflow-hidden flex flex-col"
+          : "hidden"}"
+      >
+        <h2 class="m-0 mb-4 text-[26px] text-center text-white shrink-0">
+          ${this._title || ""}
+        </h2>
+        <div class="min-h-0 flex-1 overflow-y-auto pr-0.5">
+          ${this.innerHtml()}
+        </div>
+        <div class="mt-4 flex justify-between gap-2.5 shrink-0">
+          <o-button
+            variant="primary"
+            width="block"
+            class="flex-1"
+            translationKey="win_modal.exit"
+            @click=${this._handleExit}
+          ></o-button>
+          ${this.isRankedGame
+            ? html`
+                <o-button
+                  variant="primary"
+                  width="block"
+                  class="flex-1"
+                  translationKey="win_modal.requeue"
+                  @click=${this._handleRequeue}
+                ></o-button>
+              `
+            : null}
+          <o-button
+            variant="primary"
+            width="block"
+            class="flex-1"
+            .title=${this.game?.myPlayer()?.isAlive()
+              ? translateText("win_modal.keep")
+              : translateText("win_modal.spectate")}
+            @click=${this.hide}
+          ></o-button>
+          <o-button
+            variant="primary"
+            width="block"
+            class="flex-1"
+            translationKey="main.history"
+            @click=${() => {
+              const el = document.querySelector("match-history-modal") as any;
+              el?.open?.();
+            }}
+          ></o-button>
+        </div>
+      </div>
+    `;
+  }
+
+  innerHtml() {
+    if (!this.isWin && getGamesPlayed() < 3) {
+      return this.renderYoutubeTutorial();
+    }
+    return this.renderPatternButton();
+  }
+
+  renderYoutubeTutorial() {
+    return html`
+      <div class="text-center mb-6 bg-black/30 p-2.5 rounded-sm">
+        <h3 class="text-xl font-semibold text-white mb-3">
+          ${translateText("win_modal.youtube_tutorial")}
+        </h3>
+        <!-- 56.25% = 9:16 -->
+        <div class="relative w-full pb-[56.25%]">
+          ${Platform.isElectron
+            ? html`<video
+                class="absolute top-0 left-0 w-full h-full rounded-sm"
+                src="${this.isVisible ? DESKTOP_TUTORIAL_VIDEO_URL : ""}"
+                controls
+                preload="metadata"
+              ></video>`
+            : html`<iframe
+                class="absolute top-0 left-0 w-full h-full rounded-sm"
+                src="${this.isVisible ? TUTORIAL_VIDEO_URL : ""}"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>`}
+        </div>
+      </div>
+    `;
+  }
+
+  renderPatternButton() {
+    return html`
+      <div class="text-center mb-6 bg-black/30 p-2.5 rounded-sm">
+        <h3 class="text-xl font-semibold text-white mb-3">
+          ${translateText("win_modal.support_openfront")}
+        </h3>
+        ${isDesktopShell()
+          ? null
+          : html`<p class="text-white mb-3">
+              ${translateText("win_modal.territory_pattern")}
+            </p>`}
+        <div
+          class="mx-auto w-full overflow-x-auto overflow-y-visible rounded-sm"
+        >
+          <div
+            class="flex min-w-max items-start justify-center gap-4 px-1 py-1"
+          >
+            ${this.patternContent}
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
+  async loadPatternContent() {
+    const me = await getUserMe();
+    const cosmetics = await fetchCosmetics();
+
+    const purchasable = resolveCosmetics(cosmetics, me, null).filter(
+      (r) => r.type === "pattern" && r.relationship === "purchasable",
+    );
+
+    if (purchasable.length === 0) {
+      this.patternContent = html``;
+      return;
+    }
+
+    // Shuffle the array and take patterns. Will always be 3 wide to allow scrolling
+    const shuffled = [...purchasable].sort(() => Math.random() - 0.5);
+    const selected = shuffled.slice(0, Math.min(3, shuffled.length));
+
+    this.patternContent = html`
+      <div class="flex gap-4 flex-nowrap justify-start items-start">
+        ${selected.map((resolved) => {
+          // Only patterns were selected above.
+          const pattern = resolved.cosmetic as Pattern | null;
+          return html`
+            <div data-win-cosmetic-promo class="flex w-40 flex-col gap-2">
+              <cosmetic-card
+                .resolved=${resolved}
+                .interactive=${false}
+              ></cosmetic-card>
+              <purchase-button
+                .priceHard=${pattern?.priceHard ?? null}
+                .priceSoft=${pattern?.priceSoft ?? null}
+                .rarity=${pattern?.rarity ?? "common"}
+                .itemName=${cosmeticSelectionLabel(resolved)}
+                .onPurchaseHard=${() => purchaseCosmetic(resolved, "hard")}
+                .onPurchaseSoft=${() => purchaseCosmetic(resolved, "soft")}
+              ></purchase-button>
+            </div>
+          `;
+        })}
+      </div>
+    `;
+  }
+
+
+
+  async show() {
+    crazyGamesSDK.gameplayStop();
+    this.isRankedGame =
+      this.game.config().gameConfig().rankedType !== undefined;
+    this.isVisible = true;
+    this.requestUpdate();
+    try {
+      await this.loadPatternContent();
+    } catch (error) {
+      console.warn("Failed to load win modal cosmetics", error);
+      return;
+    }
+    this.requestUpdate();
+  }
+
+  hide() {
+    this.isVisible = false;
+    this.requestUpdate();
+  }
+
+  private _handleExit() {
+    this.hide();
+    window.location.href = homeHref();
+  }
+
+  private _handleRequeue() {
+    this.hide();
+    // Requeue for the same mode; Main owns the mechanism (currently a
+    // reload with the requeue param, which reopens the queue after the
+    // page teardown).
+    document.dispatchEvent(
+      new CustomEvent("matchmaking-requeue", {
+        detail: {
+          mode:
+            this.game.config().gameConfig().rankedType === RankedType.TwoVTwo
+              ? ("2v2" as const)
+              : ("1v1" as const),
+        },
+      }),
+    );
+  }
+
+  init() {}
+
+  tick() {
+    const myPlayer = this.game.myPlayer();
+    if (
+      !this.hasShownDeathModal &&
+      myPlayer &&
+      !myPlayer.isAlive() &&
+      !this.game.inSpawnPhase() &&
+      myPlayer.hasSpawned()
+    ) {
+      this.hasShownDeathModal = true;
+      this._title = translateText("win_modal.died");
+      this.eventBus.emit(new PlaySoundEffectEvent("defeat"));
+      this.recordMatchHistory(false, this._title);
+      this.show();
+    }
+    const updates = this.game.updatesSinceLastTick();
+    const winUpdates = updates?.[GameUpdateType.Win] ?? [];
+    winUpdates.forEach((wu) => {
+      if (wu.winner === undefined) {
+        // Match cancelled (e.g. a ranked 2v2 that didn't fill or fully
+        // spawn): the game ends with no winner. Still vote the result to the
+        // server so the record is archived winnerless (never ranked).
+        this.eventBus.emit(new SendWinnerEvent(undefined, wu.allPlayersStats));
+        this._title = translateText("win_modal.match_cancelled");
+        this.isWin = false;
+        history.replaceState(null, "", `${window.location.pathname}?replay`);
+        this.show();
+      } else if (wu.winner[0] === "team") {
+        this.eventBus.emit(new SendWinnerEvent(wu.winner, wu.allPlayersStats));
+        if (wu.winner[1] === this.game.myPlayer()?.team()) {
+          this._title = translateText("win_modal.your_team");
+          this.isWin = true;
+          crazyGamesSDK.happytime();
+        } else {
+          this._title = translateText("win_modal.other_team", {
+            team: wu.winner[1],
+          });
+          this.isWin = false;
+        }
+        this.playEndOfGameSound();
+        history.replaceState(null, "", `${window.location.pathname}?replay`);
+        this.show();
+      } else if (wu.winner[0] === "nation") {
+        this.eventBus.emit(new SendWinnerEvent(wu.winner, wu.allPlayersStats));
+        this._title = translateText("win_modal.nation_won", {
+          nation: wu.winner[1],
+        });
+        this.isWin = false;
+        this.playEndOfGameSound();
+        this.show();
+      } else {
+        const winner = this.game.playerByClientID(wu.winner[1]);
+        if (!winner?.isPlayer()) return;
+        const winnerClient = winner.clientID();
+        if (winnerClient !== null) {
+          this.eventBus.emit(
+            new SendWinnerEvent(["player", winnerClient], wu.allPlayersStats),
+          );
+        }
+        if (
+          winnerClient !== null &&
+          winnerClient === this.game.myPlayer()?.clientID()
+        ) {
+          this._title = translateText("win_modal.you_won");
+          this.isWin = true;
+          crazyGamesSDK.happytime();
+        } else {
+          this._title = translateText("win_modal.other_won", {
+            player: winner.displayName(),
+          });
+          this.isWin = false;
+        }
+        this.playEndOfGameSound();
+        this.recordMatchHistory(this.isWin, this._title, wu.allPlayersStats);
+        history.replaceState(null, "", `${window.location.pathname}?replay`);
+        this.show();
+      }
+    });
+  }
+
+  private recordMatchHistory(
+    isWin: boolean,
+    title: string,
+    allPlayersStats?: import("../../../core/Schemas").AllPlayersStats,
+  ): void {
+    try {
+      const myPlayer = this.game.myPlayer();
+      const myClientId = this.game.myClientID();
+      const myStats =
+        (myClientId ? allPlayersStats?.[myClientId] : undefined) ?? undefined;
+      const numTiles = myPlayer?.numTilesOwned() ?? 0;
+      const totalTiles = this.game.numLandTiles() || 1;
+      const territoryPercent = Math.min(
+        100,
+        Math.round((numTiles / totalTiles) * 100),
+      );
+      const kills =
+        myStats?.kills?.length ?? (myPlayer?.targets()?.length ?? 0);
+      const peakTroops = myStats?.peakTroops
+        ? Number(myStats.peakTroops)
+        : (myPlayer?.troops() ?? 0);
+      const durationSeconds = Math.round(this.game.ticks() / 10);
+      const mapName = (this.game as any).mapName?.() ?? "نبرد خاورمیانه";
+
+      MatchHistoryStore.add({
+        timestamp: Date.now(),
+        map: mapName,
+        isWin,
+        title,
+        durationSeconds,
+        kills,
+        peakTroops,
+        finalTiles: numTiles,
+        territoryPercent,
+      });
+
+      AccountService.recordMatchOutcome(isWin, kills, territoryPercent);
+    } catch (e) {
+      console.warn("Failed to record match history", e);
+    }
+  }
+
+  private playEndOfGameSound(): void {
+    if (this.isWin) {
+      this.eventBus.emit(new PlaySoundEffectEvent("victory"));
+    } else if (!this.hasShownDeathModal && this.game.myPlayer()?.hasSpawned()) {
+      // Spawned check: spectators and replay viewers shouldn't get a
+      // personal defeat sting. The cue also already played if the player
+      // died earlier (hasShownDeathModal).
+      this.eventBus.emit(new PlaySoundEffectEvent("defeat"));
+    }
+  }
+}

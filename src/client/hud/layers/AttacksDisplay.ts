@@ -1,0 +1,512 @@
+import { html, LitElement } from "lit";
+import { customElement, state } from "lit/decorators.js";
+import { assetUrl } from "../../../core/AssetUrls";
+import { EventBus } from "../../../core/EventBus";
+import { MessageType, PlayerType, UnitType } from "../../../core/game/Game";
+import {
+  AttackUpdate,
+  GameUpdateType,
+  UnitIncomingUpdate,
+} from "../../../core/game/GameUpdates";
+import { Controller } from "../../Controller";
+import { themeProvider } from "../../theme/ThemeProvider";
+import {
+  GoToPlayerEvent,
+  GoToPositionEvent,
+  GoToUnitEvent,
+} from "../../TransformHandler";
+import {
+  CancelAttackIntentEvent,
+  CancelBoatIntentEvent,
+  SendAttackIntentEvent,
+} from "../../Transport";
+import { UIState } from "../../UIState";
+import { renderTroops, translateText } from "../../Utils";
+import { GameView, PlayerView, UnitView } from "../../view";
+import { getColoredSprite } from "../SpriteLoader";
+const soldierIcon = assetUrl("images/SoldierIcon.svg");
+const swordIcon = assetUrl("images/SwordIcon.svg");
+
+@customElement("attacks-display")
+export class AttacksDisplay extends LitElement implements Controller {
+  public eventBus: EventBus;
+  public game: GameView;
+  public uiState: UIState;
+
+  private active: boolean = false;
+  private incomingBoatIDs: Set<number> = new Set();
+  private spriteDataURLCache: Map<string, string> = new Map();
+  @state() private _isVisible: boolean = false;
+  @state() private incomingAttacks: AttackUpdate[] = [];
+  @state() private outgoingAttacks: AttackUpdate[] = [];
+  @state() private outgoingLandAttacks: AttackUpdate[] = [];
+  @state() private outgoingBoats: UnitView[] = [];
+  @state() private incomingBoats: UnitView[] = [];
+
+  createRenderRoot() {
+    return this;
+  }
+
+  init() {}
+
+  tick() {
+    this.active = true;
+
+    if (!this._isVisible && !this.game.inSpawnPhase()) {
+      this._isVisible = true;
+    }
+
+    const myPlayer = this.game.myPlayer();
+    if (!myPlayer || !myPlayer.isAlive()) {
+      if (this._isVisible) {
+        this._isVisible = false;
+      }
+      return;
+    }
+
+    // Track incoming boat unit IDs from UnitIncoming events
+    const updates = this.game.updatesSinceLastTick();
+    if (updates) {
+      for (const event of updates[
+        GameUpdateType.UnitIncoming
+      ] as UnitIncomingUpdate[]) {
+        if (
+          event.playerID === myPlayer.smallID() &&
+          event.messageType === MessageType.NAVAL_INVASION_INBOUND
+        ) {
+          this.incomingBoatIDs.add(event.unitID);
+        }
+      }
+    }
+
+    // Resolve incoming boats from tracked IDs, remove inactive ones
+    const resolvedIncomingBoats: UnitView[] = [];
+    for (const unitID of this.incomingBoatIDs) {
+      const unit = this.game.unit(unitID);
+      if (unit && unit.isActive() && unit.type() === UnitType.TransportShip) {
+        resolvedIncomingBoats.push(unit);
+      } else {
+        this.incomingBoatIDs.delete(unitID);
+      }
+    }
+    this.incomingBoats = resolvedIncomingBoats;
+
+    this.incomingAttacks = myPlayer.incomingAttacks().filter((a) => {
+      const t = (this.game.playerBySmallID(a.attackerID) as PlayerView).type();
+      return t !== PlayerType.Bot;
+    });
+
+    this.outgoingAttacks = myPlayer
+      .outgoingAttacks()
+      .filter((a) => a.targetID !== 0);
+
+    this.outgoingLandAttacks = myPlayer
+      .outgoingAttacks()
+      .filter((a) => a.targetID === 0);
+
+    this.outgoingBoats = myPlayer
+      .units()
+      .filter((u) => u.type() === UnitType.TransportShip);
+
+    const hasAnyAttacks =
+      this.incomingAttacks.length > 0 ||
+      this.outgoingAttacks.length > 0 ||
+      this.outgoingLandAttacks.length > 0 ||
+      this.incomingBoats.length > 0 ||
+      this.outgoingBoats.length > 0;
+
+    if (hasAnyAttacks || this.prevHadAttacks) {
+      this.prevHadAttacks = hasAnyAttacks;
+      this.requestUpdate();
+    }
+  }
+
+  private prevHadAttacks = false;
+
+  getTickIntervalMs(): number {
+    return 100;
+  }
+
+  private renderButton(options: {
+    content: any;
+    onClick?: () => void;
+    className?: string;
+    disabled?: boolean;
+    translate?: boolean;
+    hidden?: boolean;
+  }) {
+    const {
+      content,
+      onClick,
+      className = "",
+      disabled = false,
+      translate = true,
+      hidden = false,
+    } = options;
+
+    if (hidden) {
+      return html``;
+    }
+
+    return html`
+      <button
+        class="${className}"
+        @click=${onClick}
+        ?disabled=${disabled}
+        ?translate=${translate}
+      >
+        ${content}
+      </button>
+    `;
+  }
+
+  private emitCancelAttackIntent(id: string) {
+    const myPlayer = this.game.myPlayer();
+    if (!myPlayer) return;
+    this.eventBus.emit(new CancelAttackIntentEvent(id));
+  }
+
+  private emitBoatCancelIntent(id: number) {
+    const myPlayer = this.game.myPlayer();
+    if (!myPlayer) return;
+    this.eventBus.emit(new CancelBoatIntentEvent(id));
+  }
+
+  private emitGoToPlayerEvent(attackerID: number) {
+    const attacker = this.game.playerBySmallID(attackerID) as PlayerView;
+    this.eventBus.emit(new GoToPlayerEvent(attacker));
+  }
+
+  private getBoatSpriteDataURL(unit: UnitView): string {
+    const owner = unit.owner();
+    const key = `boat-${owner.id()}`;
+    const cached = this.spriteDataURLCache.get(key);
+    if (cached) return cached;
+    try {
+      const canvas = getColoredSprite(unit, themeProvider.current());
+      const dataURL = canvas.toDataURL();
+      this.spriteDataURLCache.set(key, dataURL);
+      return dataURL;
+    } catch {
+      return "";
+    }
+  }
+
+  private async attackWarningOnClick(attack: AttackUpdate) {
+    const playerView = this.game.playerBySmallID(attack.attackerID);
+    if (playerView !== undefined) {
+      if (playerView instanceof PlayerView) {
+        const attacks = await playerView.attackClusteredPositions(attack.id);
+        const pos = attacks[0]?.positions[0];
+
+        if (!pos) {
+          this.emitGoToPlayerEvent(attack.attackerID);
+        } else {
+          this.eventBus.emit(new GoToPositionEvent(pos.x, pos.y));
+        }
+      }
+    } else {
+      this.emitGoToPlayerEvent(attack.attackerID);
+    }
+  }
+
+  private handleRetaliate(attack: AttackUpdate) {
+    const attacker = this.game.playerBySmallID(attack.attackerID) as PlayerView;
+    if (!attacker) return;
+
+    const myPlayer = this.game.myPlayer();
+    if (!myPlayer) return;
+
+    const counterTroops = Math.min(
+      attack.troops,
+      this.uiState.attackRatio * myPlayer.troops(),
+    );
+    this.eventBus.emit(new SendAttackIntentEvent(attacker.id(), counterTroops));
+  }
+
+  private renderIncomingAttacks() {
+    if (this.incomingAttacks.length === 0) return html``;
+
+    const myPlayer = this.game.myPlayer();
+    const myDefPosts = myPlayer
+      ? myPlayer.units(UnitType.DefensePost).length
+      : 0;
+
+    return this.incomingAttacks.map(
+      (attack) => html`
+        <div
+          class="flex items-center gap-1.5 w-full bg-slate-950/90 backdrop-blur-xl border border-rose-500/40 rounded-lg px-2.5 py-1 mb-1 shadow-lg overflow-hidden"
+        >
+          ${this.renderButton({
+            content: html`<span class="inline-flex items-center"
+                ><img
+                  src="${soldierIcon}"
+                  class="h-4 w-4"
+                  style="filter: brightness(0) saturate(100%) invert(27%) sepia(91%) saturate(4551%) hue-rotate(348deg) brightness(89%) contrast(97%)"
+                />↓</span
+              ><span class="ml-1 font-mono font-bold">${renderTroops(attack.troops)}</span>
+              <span class="truncate ml-1 font-semibold"
+                >${(
+                  this.game.playerBySmallID(attack.attackerID) as PlayerView
+                )?.displayName()}</span
+              >
+              ${myDefPosts > 0
+                ? html`<span
+                    class="ml-1 text-[10px] font-black text-emerald-300 bg-emerald-950/80 border border-emerald-500/60 px-1 py-0.5 rounded shadow-xs"
+                    title="پست دفاعی شما فعال است: تلفات دشمن ۵ برابر و سرعت پیشروی ۳ برابر کند شده است"
+                    >🛡️ سنگر فعال (دفاع ۵ برابری)</span
+                  >`
+                : ""}
+              ${attack.retreating
+                ? `(${translateText("events_display.retreating")}...)`
+                : ""} `,
+            onClick: () => this.attackWarningOnClick(attack),
+            className:
+              "text-left text-rose-400 inline-flex items-center gap-0.5 lg:gap-1 min-w-0 font-medium",
+            translate: false,
+          })}
+          ${!attack.retreating
+            ? this.renderButton({
+                content: html`<img
+                  src="${swordIcon}"
+                  class="h-3.5 w-3.5"
+                  style="filter: brightness(0) saturate(100%) invert(27%) sepia(91%) saturate(4551%) hue-rotate(348deg) brightness(89%) contrast(97%)"
+                />`,
+                onClick: () => this.handleRetaliate(attack),
+                className:
+                  "ml-auto inline-flex items-center justify-center cursor-pointer bg-rose-950/60 hover:bg-rose-900/80 rounded-md px-1.5 py-1 border border-rose-700/50 shadow-xs",
+                translate: false,
+              })
+            : ""}
+        </div>
+      `,
+    );
+  }
+
+  private renderOutgoingAttacks() {
+    if (this.outgoingAttacks.length === 0) return html``;
+
+    return this.outgoingAttacks.map((attack) => {
+      const targetPlayer = this.game.playerBySmallID(
+        attack.targetID,
+      ) as PlayerView;
+      const targetDefPosts = targetPlayer
+        ? targetPlayer.units(UnitType.DefensePost).length
+        : 0;
+      const targetTroops = targetPlayer ? targetPlayer.troops() : 0;
+
+      return html`
+        <div
+          class="flex items-center gap-1.5 w-full bg-slate-950/90 backdrop-blur-xl border border-cyan-500/40 rounded-lg px-2.5 py-1 mb-1 shadow-lg overflow-hidden"
+        >
+          ${this.renderButton({
+            content: html`<span class="inline-flex items-center"
+                ><img
+                  src="${soldierIcon}"
+                  class="h-4 w-4"
+                  style="filter: brightness(0) saturate(100%) invert(62%) sepia(80%) saturate(500%) hue-rotate(175deg) brightness(100%)"
+                />↑</span
+              ><span class="ml-1 font-mono font-bold">${renderTroops(attack.troops)}</span>
+              <span class="truncate ml-1 font-semibold">${targetPlayer?.displayName()}</span>
+              <span class="ml-1 text-[11px] text-cyan-200/80 font-mono font-semibold"
+                >(⚔️ ${renderTroops(attack.troops)} vs
+                ${renderTroops(targetTroops)})</span
+              >
+              ${targetDefPosts > 0
+                ? html`<span
+                    class="ml-1 text-[10px] font-black text-rose-300 bg-rose-950/80 border border-rose-500/60 px-1 py-0.5 rounded shadow-xs"
+                    title="دشمن در این منطقه سنگر بتنی دارد: تلفات شما ۵ برابر و پیشروی ۳ برابر کندتر است!"
+                    >🛡️ سنگر دشمن (-۸۰٪ اثر حمله)</span
+                  >`
+                : ""} `,
+            onClick: async () => this.attackWarningOnClick(attack),
+            className:
+              "text-left text-cyan-300 inline-flex items-center gap-0.5 lg:gap-1 min-w-0 font-medium",
+            translate: false,
+          })}
+          ${!attack.retreating
+            ? html`<button
+                @click=${() => this.emitCancelAttackIntent(attack.id)}
+                class="ml-auto inline-flex items-center justify-center w-5 h-5 rounded-md bg-rose-500/20 hover:bg-rose-500/40 text-rose-300 border border-rose-500/40 text-xs font-bold transition-colors cursor-pointer shrink-0"
+                title="لغو حمله"
+              >
+                ✕
+              </button>`
+            : html`<span class="ml-auto truncate text-cyan-400 font-mono text-xs"
+                >(${translateText("events_display.retreating")}...)</span
+              >`}
+        </div>
+      `;
+    });
+  }
+
+  private renderOutgoingLandAttacks() {
+    if (this.outgoingLandAttacks.length === 0) return html``;
+
+    return this.outgoingLandAttacks.map(
+      (landAttack) => html`
+        <div
+          class="flex items-center gap-1.5 w-full bg-slate-950/90 backdrop-blur-xl border border-cyan-500/40 rounded-lg px-2.5 py-1 mb-1 shadow-lg overflow-hidden"
+        >
+          ${this.renderButton({
+            content: html`<span class="inline-flex items-center"
+                ><img
+                  src="${soldierIcon}"
+                  class="h-4 w-4"
+                  style="filter: brightness(0) saturate(100%) invert(62%) sepia(80%) saturate(500%) hue-rotate(175deg) brightness(100%)"
+                />↑</span
+              ><span class="ml-1 font-mono font-bold">${renderTroops(landAttack.troops)}</span>
+              <span class="truncate ml-1 font-semibold">${translateText("help_modal.ui_wilderness")}</span>`,
+            className:
+              "text-left text-cyan-300 inline-flex items-center gap-0.5 lg:gap-1 min-w-0 font-medium",
+            translate: false,
+          })}
+          ${!landAttack.retreating
+            ? html`<button
+                @click=${() => this.emitCancelAttackIntent(landAttack.id)}
+                class="ml-auto inline-flex items-center justify-center w-5 h-5 rounded-md bg-rose-500/20 hover:bg-rose-500/40 text-rose-300 border border-rose-500/40 text-xs font-bold transition-colors cursor-pointer shrink-0"
+                title="لغو حمله"
+              >
+                ✕
+              </button>`
+            : html`<span class="ml-auto truncate text-cyan-400 font-mono text-xs"
+                >(${translateText("events_display.retreating")}...)</span
+              >`}
+        </div>
+      `,
+    );
+  }
+
+  private getBoatTargetName(boat: UnitView): string {
+    const target = boat.targetTile();
+    if (target === undefined) return "";
+    const ownerID = this.game.ownerID(target);
+    if (ownerID === 0) return translateText("help_modal.ui_wilderness");
+    const player = this.game.playerBySmallID(ownerID) as PlayerView;
+    return player?.displayName() ?? "";
+  }
+
+  private renderBoatIcon(boat: UnitView) {
+    const dataURL = this.getBoatSpriteDataURL(boat);
+    if (!dataURL) return html``;
+    return html`<img
+      src="${dataURL}"
+      class="h-5 w-5 inline-block"
+      style="image-rendering: pixelated"
+    />`;
+  }
+
+  private getBoatETA(boat: UnitView): string {
+    const plan = this.game.motionPlans().get(boat.id());
+    if (!plan) return "";
+
+    const planSteps = plan.path.length;
+    const planTicks = planSteps * plan.ticksPerStep;
+    const planEndTick = plan.startTick + planTicks;
+
+    const remainingTicks = planEndTick - this.game.ticks();
+    if (remainingTicks <= 0) return "0s";
+    const remainingMs = remainingTicks * this.game.config().msPerTick();
+    const remainingSeconds = Math.ceil(remainingMs / 1000);
+
+    // e.g. return 1s, 35s, 59s, 1m, 1m1s, 1m59s, 2m, etc
+    const m = Math.floor(remainingSeconds / 60); // minutes
+    const s = remainingSeconds % 60; // seconds
+    return (m ? `${m}m` : "") + (s ? `${s}s` : "");
+  }
+
+  private renderBoats() {
+    if (this.outgoingBoats.length === 0) return html``;
+
+    return this.outgoingBoats.map(
+      (boat) => html`
+        <div
+          class="flex items-center gap-0.5 w-full bg-gray-800/92 backdrop-blur-sm sm:rounded-lg px-1.5 py-0.5 overflow-hidden"
+        >
+          ${this.renderButton({
+            content: html`${this.renderBoatIcon(boat)}
+              <span class="inline-block min-w-[3rem] text-right"
+                >${renderTroops(boat.troops())}</span
+              >
+              <span class="truncate text-xs ml-1"
+                >${this.getBoatTargetName(boat)}</span
+              >
+              <span class="text-xs ml-1 text-slate-300"
+                >${this.getBoatETA(boat)}</span
+              >`,
+            onClick: () => this.eventBus.emit(new GoToUnitEvent(boat)),
+            className:
+              "text-left text-aquarius inline-flex items-center gap-0.5 lg:gap-1 min-w-0",
+            translate: false,
+          })}
+          ${boat.transportShipState().isRetreating
+            ? html`<span class="ml-auto truncate text-aquarius"
+                >(${translateText("events_display.retreating")}...)</span
+              >`
+            : this.renderButton({
+                content: "\u274C",
+                onClick: () => this.emitBoatCancelIntent(boat.id()),
+                className: "ml-auto text-left shrink-0",
+                disabled: boat.transportShipState().isRetreating,
+              })}
+        </div>
+      `,
+    );
+  }
+
+  private renderIncomingBoats() {
+    if (this.incomingBoats.length === 0) return html``;
+
+    return this.incomingBoats.map(
+      (boat) => html`
+        <div
+          class="flex items-center gap-0.5 w-full bg-gray-800/92 backdrop-blur-sm sm:rounded-lg px-1.5 py-0.5 overflow-hidden"
+        >
+          ${this.renderButton({
+            content: html`${this.renderBoatIcon(boat)}
+              <span class="inline-block min-w-[3rem] text-right"
+                >${renderTroops(boat.troops())}</span
+              >
+              <span class="truncate text-xs ml-1"
+                >${boat.owner()?.displayName()}</span
+              >
+              <span class="text-xs ml-1 text-slate-300"
+                >${this.getBoatETA(boat)}</span
+              >`,
+            onClick: () => this.eventBus.emit(new GoToUnitEvent(boat)),
+            className:
+              "text-left text-red-400 inline-flex items-center gap-0.5 lg:gap-1 min-w-0",
+            translate: false,
+          })}
+        </div>
+      `,
+    );
+  }
+
+  render() {
+    if (!this.active || !this._isVisible) {
+      return html``;
+    }
+
+    const hasAnything =
+      this.outgoingAttacks.length > 0 ||
+      this.outgoingLandAttacks.length > 0 ||
+      this.outgoingBoats.length > 0 ||
+      this.incomingAttacks.length > 0 ||
+      this.incomingBoats.length > 0;
+
+    if (!hasAnything) {
+      return html``;
+    }
+
+    return html`
+      <div
+        class="w-full mb-1 mt-1 sm:mt-0 pointer-events-auto grid grid-cols-2 gap-1 text-white text-sm lg:text-base max-h-[7rem] overflow-y-auto"
+      >
+        ${this.renderOutgoingAttacks()} ${this.renderOutgoingLandAttacks()}
+        ${this.renderBoats()} ${this.renderIncomingAttacks()}
+        ${this.renderIncomingBoats()}
+      </div>
+    `;
+  }
+}

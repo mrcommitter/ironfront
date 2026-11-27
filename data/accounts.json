@@ -1,0 +1,2404 @@
+[
+  {
+    "id": "usr_8949368d1377",
+    "username": "General_Sorena",
+    "passwordSalt": "4e96d46696b54f02ddd43cb38b6bf0cf",
+    "passwordHash": "8dfd662c551690586f8a91285c6db55a5e966d059ee48055a389aad2448f8ff0886042181b5c3ea690a5ff070535d8f74244211e84414614486d9211994e1d5c",
+    "token": "tok_8856fb5326800bfee173357ad9c74d49",
+    "level": 15,
+    "xp": 5250,
+    "coins": 18000,
+    "gems": 375,
+    "clanTag": "IRN",
+    "flag": "ir",
+    "title": "فرمانده معظم",
+    "inventory": [
+      "pattern:default",
+      "flag:lion_sun",
+      "title:supreme_commander"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده معظم",
+      "crown": ""
+    },
+    "stats": {
+      "matchesPlayed": 160,
+      "wins": 142,
+      "losses": 18,
+      "kills": 890,
+      "bestTerritory": 88,
+      "elo": 1850,
+      "peakElo": 1900
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1788727072807,
+    "updatedAt": 1792481215785,
+    "uuid": "6aad350a-b4bf-4e77-b85a-0dffe6998c41"
+  },
+  {
+    "id": "usr_4155432b6da6",
+    "username": "Iron_Hunter",
+    "passwordSalt": "52bf3a73b32d3a8c1b65cf8deb2ecf3b",
+    "passwordHash": "aa7cbc7a0e192739104851625d0cf51d29e601ba5de439ce953f60f94479803757413124c596df4233d1b19e0f276113ab7b3fb8375c9e5e8c37f7b5ce5d3e15",
+    "token": "tok_6a7369f09ecb8475771932e91afb80b9",
+    "level": 12,
+    "xp": 4200,
+    "coins": 14400,
+    "gems": 300,
+    "clanTag": "IRN",
+    "flag": "ir",
+    "title": "شکارچی تانک",
+    "inventory": [
+      "pattern:default",
+      "flag:lion_sun",
+      "title:supreme_commander"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "شکارچی تانک"
+    },
+    "stats": {
+      "matchesPlayed": 135,
+      "wins": 110,
+      "losses": 25,
+      "kills": 730,
+      "bestTerritory": 88,
+      "elo": 1720,
+      "peakElo": 1770
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1788727072835,
+    "updatedAt": 1791319072835,
+    "uuid": "57722c6c-8fb6-45d3-9bd7-6f4f3d26b121"
+  },
+  {
+    "id": "usr_f4d831dd9ff7",
+    "username": "Ariobarzan",
+    "passwordSalt": "0eb53990370d4c61bab6ffc4c359a36e",
+    "passwordHash": "8fd21664347ef47fce4d80e6b0557e5d8406a685d955a398c6451ff9826f5de626a0d32aeed0adbfc4ce14577e7380b2e39606d86fcb2bd232e09dc522c1395d",
+    "token": "tok_89f41b97dcb5ee94d5cc8ce213183ee0",
+    "level": 10,
+    "xp": 3500,
+    "coins": 12000,
+    "gems": 250,
+    "clanTag": "IRN",
+    "flag": "ir",
+    "title": "فاتح آهنین",
+    "inventory": [
+      "pattern:default",
+      "flag:lion_sun",
+      "title:supreme_commander"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فاتح آهنین"
+    },
+    "stats": {
+      "matchesPlayed": 125,
+      "wins": 95,
+      "losses": 30,
+      "kills": 610,
+      "bestTerritory": 88,
+      "elo": 1640,
+      "peakElo": 1690
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1788727072864,
+    "updatedAt": 1791319072864,
+    "uuid": "7a6310b7-a64c-4e6c-9186-a4eb03df6c2c"
+  },
+  {
+    "id": "usr_3643a8d0ef58",
+    "username": "Desert_Eagle",
+    "passwordSalt": "4e2871880da2fdf1436bfd5fafc8e651",
+    "passwordHash": "2ad87c588fcc38f04604c5f046474eb065ccd47db6e920c19fde5979810bbca1699e91fa042c578ae408364130adf9d55a2e714fe7abd3ce293acf081ce9707c",
+    "token": "tok_2eb29bb2e11b2e7b02319fb9c3bd3f84",
+    "level": 8,
+    "xp": 2800,
+    "coins": 9600,
+    "gems": 200,
+    "clanTag": "IRN",
+    "flag": "ir",
+    "title": "نابغه استراتژی",
+    "inventory": [
+      "pattern:default",
+      "flag:lion_sun",
+      "title:supreme_commander"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "نابغه استراتژی"
+    },
+    "stats": {
+      "matchesPlayed": 107,
+      "wins": 78,
+      "losses": 29,
+      "kills": 480,
+      "bestTerritory": 88,
+      "elo": 1530,
+      "peakElo": 1580
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1788727072890,
+    "updatedAt": 1791319072890,
+    "uuid": "6ca94914-7b0a-41e3-9c3c-32b9f8e10a1e"
+  },
+  {
+    "id": "usr_cd9a05191025",
+    "username": "Alborz_Wolf",
+    "passwordSalt": "4b7e6d82e9c02133b47ce7226bb707a2",
+    "passwordHash": "b09f1c96d5970cb6f1547b5428e9223a99c9a7bf08a6ece057b1f02967e0ed29d93ff30835b4568f461de20f3468834342a92106b70a7bfc0615fc71682ca6ca",
+    "token": "tok_d6a140f16f0298d09f3e6b17b2165044",
+    "level": 6,
+    "xp": 2100,
+    "coins": 7200,
+    "gems": 150,
+    "clanTag": "IRN",
+    "flag": "ir",
+    "title": "گرگ تنها",
+    "inventory": [
+      "pattern:default",
+      "flag:lion_sun",
+      "title:supreme_commander"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "گرگ تنها"
+    },
+    "stats": {
+      "matchesPlayed": 80,
+      "wins": 56,
+      "losses": 24,
+      "kills": 350,
+      "bestTerritory": 88,
+      "elo": 1420,
+      "peakElo": 1470
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1788727072917,
+    "updatedAt": 1791319072917,
+    "uuid": "7d03548c-a5d7-4dae-8713-a975ffae6996"
+  },
+  {
+    "id": "usr_c096882d0b71db05",
+    "username": "TestCommander99",
+    "passwordSalt": "9baf670b420d4fb066fcce8dae57ae5c",
+    "passwordHash": "bab4f951f4de161533ba1fcf68b0216395c3582886cd4774d8ab1b018c4b3533034d78a7ca783a2d016f73fea0d3c399eb2ec620c9bcda145c02776405f8944f",
+    "token": "tok_954382d86ba96f66e26631d395848e7958dbe92dc0aa4c5d",
+    "level": 2,
+    "xp": 159,
+    "coins": 2163,
+    "gems": 75,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie",
+      "pattern:desert_storm"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 1,
+      "wins": 1,
+      "losses": 0,
+      "kills": 5,
+      "bestTerritory": 42,
+      "elo": 1025,
+      "peakElo": 1025
+    },
+    "lastDailyClaim": 1791319094259,
+    "createdAt": 1791319085607,
+    "updatedAt": 1791319565012,
+    "uuid": "977b31e7-1d43-44ce-b248-332275f6c28e"
+  },
+  {
+    "id": "usr_f18fea5c8287e59d",
+    "username": "CommanderTest",
+    "passwordSalt": "e6a0671dd473745a35215462f67eb3a3",
+    "passwordHash": "06e0afc43d54bac0f3303af169dcb6673712e289846a8ed9c68926a4bd31984eee482a09c6871f08d17568df2a125e630af94950fb85c223906d1818f24ff7b0",
+    "token": "tok_b83aff0c5f591f42272512517bde1c03827cf128d845ad5b",
+    "level": 1,
+    "xp": 0,
+    "coins": 1000,
+    "gems": 50,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 0,
+      "wins": 0,
+      "losses": 0,
+      "kills": 0,
+      "bestTerritory": 0,
+      "elo": 1000,
+      "peakElo": 1000
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1791322532046,
+    "updatedAt": 1791322656171,
+    "uuid": "9f910db1-2dc4-483b-855c-7b5a86adaaf6"
+  },
+  {
+    "id": "usr_e46f5763e86fb57f",
+    "username": "Commander_5064",
+    "passwordSalt": "b3547eceeafc00ad85f05dcbb3b331ee",
+    "passwordHash": "",
+    "token": "tok_100f309ff1da6c9189f145670678a25764c5c3f03b052408",
+    "level": 1,
+    "xp": 0,
+    "coins": 200,
+    "gems": 50,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie",
+      "pattern:matrix_code:matrix_code"
+    ],
+    "equipped": {
+      "pattern": "pattern:matrix_code:matrix_code",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 0,
+      "wins": 0,
+      "losses": 0,
+      "kills": 0,
+      "bestTerritory": 0,
+      "elo": 1000,
+      "peakElo": 1000
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1791331549366,
+    "updatedAt": 1792298157019,
+    "uuid": "a5fb5449-dca8-4b2d-9a77-6117c9bc0b70"
+  },
+  {
+    "id": "usr_cfad75213371371e",
+    "username": "Commander_2700",
+    "passwordSalt": "ef9d1de3060e274fe8446871483ae9f0",
+    "passwordHash": "",
+    "token": "tok_9e3288b42ffb3579a2afb0b97f72df4175e6024f96b8f623",
+    "level": 1,
+    "xp": 0,
+    "coins": 400,
+    "gems": 10,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie",
+      "pattern:cyberpunk:cyberpunk",
+      "pattern:carbon_fiber:carbon_fiber",
+      "crown:spartan_crest"
+    ],
+    "equipped": {
+      "pattern": "pattern:carbon_fiber:carbon_fiber",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار",
+      "crown": "spartan_crest"
+    },
+    "stats": {
+      "matchesPlayed": 0,
+      "wins": 0,
+      "losses": 0,
+      "kills": 0,
+      "bestTerritory": 0,
+      "elo": 1000,
+      "peakElo": 1000
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1791331564351,
+    "updatedAt": 1791331602444,
+    "uuid": "0d6a3707-cdec-42e7-bae3-dae900d4b7ad"
+  },
+  {
+    "id": "usr_0c5195ea79d22edc",
+    "username": "Commander_9474",
+    "passwordSalt": "7312f8e068fb8e56be30b174c0762d15",
+    "passwordHash": "",
+    "token": "tok_a7b9a12dbda8f4456f5be53bebe17611800363ae71efb662",
+    "level": 1,
+    "xp": 0,
+    "coins": 650,
+    "gems": 60,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie",
+      "effect:golden_dust"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار",
+      "effect": "golden_dust"
+    },
+    "stats": {
+      "matchesPlayed": 0,
+      "wins": 0,
+      "losses": 0,
+      "kills": 0,
+      "bestTerritory": 0,
+      "elo": 1000,
+      "peakElo": 1000
+    },
+    "lastDailyClaim": 1792298740636,
+    "createdAt": 1792298203450,
+    "updatedAt": 1792299101867,
+    "uuid": "be2aff35-5e58-4eb5-bb55-bc3c19c4ff9a"
+  },
+  {
+    "id": "usr_a9ab418e8d7a0695",
+    "uuid": "0b3ab847-1041-47e1-8045-cc6f9883155f",
+    "username": "Hero_8812",
+    "passwordSalt": "ef91f0c6983563e6e3e24b6d2797c791",
+    "passwordHash": "1d97844a7f50aba3d6dae07d86c5512fedbdacb051efae5920b4fd68d074c1878bb0873bd4bdda047ef12bb9f02cb1582a264a3c25c2b76229679b969d96bedd",
+    "token": "tok_fa94c4a556aa7cdceb9d95ee055d2835fe9188c14cd05540",
+    "level": 1,
+    "xp": 0,
+    "coins": 1000,
+    "gems": 60,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie",
+      "flag:tiger"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "tiger",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 0,
+      "wins": 0,
+      "losses": 0,
+      "kills": 0,
+      "bestTerritory": 0,
+      "elo": 1000,
+      "peakElo": 1000
+    },
+    "lastDailyClaim": 1792302586174,
+    "createdAt": 1792302586156,
+    "updatedAt": 1792302586174
+  },
+  {
+    "id": "usr_a026d39c6689766b",
+    "uuid": "b4ca2aef-942c-4d47-ab33-222959a357e8",
+    "username": "notrez",
+    "passwordSalt": "07b59edf0e6b557e4fb99903415c8824",
+    "passwordHash": "9a6016fc5356b0347c77b85594dff0a9ed06e60e84680d07d470c8abcb96bffd4c69ec8082472c81238aa0efb75b2b9c27af24afb76297d962d4f0ea0b56b4df",
+    "token": "tok_098469e23760e41db2644dfe110a71540c3c677da752bb07",
+    "level": 2,
+    "xp": 410,
+    "coins": 1970,
+    "gems": 25,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie",
+      "pattern:magma:magma",
+      "crown:emperor_gold"
+    ],
+    "equipped": {
+      "pattern": "pattern:magma:magma",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار",
+      "crown": "emperor_gold"
+    },
+    "stats": {
+      "matchesPlayed": 3,
+      "wins": 1,
+      "losses": 2,
+      "kills": 0,
+      "bestTerritory": 80,
+      "elo": 995,
+      "peakElo": 1025
+    },
+    "lastDailyClaim": 1792404261548,
+    "createdAt": 1792308530821,
+    "updatedAt": 1792444804047
+  },
+  {
+    "id": "usr_0d647715d84ced79",
+    "uuid": "3a9277c4-c43e-4c53-8fee-1abbbd890ce3",
+    "username": "ZodTest_6810",
+    "passwordSalt": "1af15b7eacb65542848bf042efcd84f9",
+    "passwordHash": "d564bcd63b13e14a956792ad9b56551755c54b9add4553f4b8b7f75b1409abdd379e0668cc496da97441db95943a437732e882fc5a648e6f4b249e56657dcd20",
+    "token": "tok_a18574bf62475f4a6fb96af47cf02ded0cef29a6b8b3c4fc",
+    "level": 1,
+    "xp": 0,
+    "coins": 1000,
+    "gems": 50,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 0,
+      "wins": 0,
+      "losses": 0,
+      "kills": 0,
+      "bestTerritory": 0,
+      "elo": 1000,
+      "peakElo": 1000
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1792309787942,
+    "updatedAt": 1792309787942
+  },
+  {
+    "id": "usr_b5a39a795dc23ac1",
+    "uuid": "dcb7cb8d-7b36-49ff-b9c0-1e64174c9fdf",
+    "username": "ZodTest_1391",
+    "passwordSalt": "57a43bf679acd4225ffd8df8baf0b4e7",
+    "passwordHash": "f443760fc95f6d244a2125c29b48499de35be91a748709122f20dd021532671f5b68ec07b3b11e0ade6fbea96eb02e58bacc4f79ed6cb4af67dd624f77451465",
+    "token": "tok_a1bd44735a2fbb8a75f86ab2e711c00cc4ca1b3344d63186",
+    "level": 1,
+    "xp": 0,
+    "coins": 1000,
+    "gems": 50,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 0,
+      "wins": 0,
+      "losses": 0,
+      "kills": 0,
+      "bestTerritory": 0,
+      "elo": 1000,
+      "peakElo": 1000
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1792309803546,
+    "updatedAt": 1792309803546
+  },
+  {
+    "id": "usr_c176fdcfae8fa95d",
+    "uuid": "e8d1d7c3-d5eb-47af-b0fb-27c5b01d60dc",
+    "username": "Hero_8230",
+    "passwordSalt": "3041d9e932fad2fc19fb745ff85303eb",
+    "passwordHash": "6715ec4e9b2054168eccf3598eeb8652d347d2c1fd7273439f2100ddbc07b565b8ee0ca346a1f445b89a992cdeae75076985a3a6f96a0733b67bc7e795fe65d8",
+    "token": "tok_ff1b501341e5d2dc03c60b855ec68a0378cf12980db9e108",
+    "level": 1,
+    "xp": 0,
+    "coins": 1000,
+    "gems": 60,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie",
+      "flag:tiger"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "tiger",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 0,
+      "wins": 0,
+      "losses": 0,
+      "kills": 0,
+      "bestTerritory": 0,
+      "elo": 1000,
+      "peakElo": 1000
+    },
+    "lastDailyClaim": 1792309924214,
+    "createdAt": 1792309924191,
+    "updatedAt": 1792309924214
+  },
+  {
+    "id": "usr_3688749c1c5bfae4",
+    "uuid": "af9f5fd0-b7a7-4bb6-8f84-c7bcd3ac685c",
+    "username": "Hero_8951",
+    "passwordSalt": "0805f4f22dfad6465ae7c0a5d624c658",
+    "passwordHash": "970942cac4c4f13954ec217606e3e4abb135d8adfe152290bf19993d9242f48dc52191cab3ce59035096ebafb2004d587b8547650b80249dcde3a14f323e0e83",
+    "token": "tok_f189144e2957cd7175191045f78a08848fa2ffd1f8605874",
+    "level": 1,
+    "xp": 0,
+    "coins": 1000,
+    "gems": 60,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie",
+      "flag:tiger"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "tiger",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 0,
+      "wins": 0,
+      "losses": 0,
+      "kills": 0,
+      "bestTerritory": 0,
+      "elo": 1000,
+      "peakElo": 1000
+    },
+    "lastDailyClaim": 1792309996099,
+    "createdAt": 1792309996075,
+    "updatedAt": 1792309996099
+  },
+  {
+    "id": "usr_6301b74bb8df715d",
+    "uuid": "073a0ed0-3d81-4fcc-b951-59916a842b0f",
+    "username": "Hero_2974",
+    "passwordSalt": "289ab8846ad39b58b6491a6465e680de",
+    "passwordHash": "f2fd3e0bfcf691ddb2ac5a1ce4a800600b4fd02c1db07af34454d6ec225f2c12d946b317df1d2f1181b010845a4aef873ae8b621c70688c98b7f5b5099607b8a",
+    "token": "tok_b84fce794256e07714d568a65c26e0b4231d1f36133cf854",
+    "level": 1,
+    "xp": 0,
+    "coins": 1000,
+    "gems": 60,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie",
+      "flag:tiger"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "tiger",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 0,
+      "wins": 0,
+      "losses": 0,
+      "kills": 0,
+      "bestTerritory": 0,
+      "elo": 1000,
+      "peakElo": 1000
+    },
+    "lastDailyClaim": 1792310009206,
+    "createdAt": 1792310009186,
+    "updatedAt": 1792310009206
+  },
+  {
+    "id": "usr_f36887ecd42229cd",
+    "uuid": "ac4aaf51-6dbf-40d7-9810-781008eee21e",
+    "username": "SecAuditor_3256",
+    "passwordSalt": "3e709e98424fe60a3d977d07af996147",
+    "passwordHash": "2d3b422ef0e995fc2bddf3fa3118275e80d27bc1a0a46b5b836ff89d253105dc0f9dda99ff27fdae1b3bf5f4e3e778f321dd813b3195ef7b35402f8e5988cd92",
+    "token": "tok_ed09c3f6ed6156ff3165e44b9121ccb28cc1cf8420157596",
+    "level": 2,
+    "xp": 100,
+    "coins": 1965,
+    "gems": 65,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 1,
+      "wins": 1,
+      "losses": 0,
+      "kills": 2,
+      "bestTerritory": 50,
+      "elo": 1025,
+      "peakElo": 1025
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1792345556696,
+    "updatedAt": 1792345556714
+  },
+  {
+    "id": "usr_57fa005768badb2b",
+    "uuid": "27f91059-e69d-4edb-ba63-02604d261c31",
+    "username": "AlphaPlayer_7552",
+    "passwordSalt": "bf8ebd1c2ed477f27943e915138b4198",
+    "passwordHash": "b0a1d204a1906a19bf622dd9ed502165b95477c2728fd86a3ac1d76ed9f1c6e6a39135be491e0fc8827784e9e94acd818c40a8ff932f1cc13aa6e3499561307a",
+    "token": "tok_86c76a679576235fe3102c5b9702658146eaf41fdcd35211",
+    "level": 2,
+    "xp": 264,
+    "coins": 2093,
+    "gems": 75,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie",
+      "flag:tiger"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "tiger",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 1,
+      "wins": 1,
+      "losses": 0,
+      "kills": 6,
+      "bestTerritory": 82,
+      "elo": 1025,
+      "peakElo": 1025
+    },
+    "lastDailyClaim": 1792345556764,
+    "createdAt": 1792345556748,
+    "updatedAt": 1792345559909
+  },
+  {
+    "id": "usr_d0d8f44f994e9afb",
+    "uuid": "4a8db24d-e5fe-4c71-ba35-2a7ecea67bc2",
+    "username": "BetaPlayer_4315",
+    "passwordSalt": "09478b78cfa056e20b4e5a2ff46fd44d",
+    "passwordHash": "623efd865cec1337b8246a2728b9707bfb91bc276bf4c281c0fd1af541a202fca3ed4cd888ede88ca903a520f23a5e31921c8607d20b622f909fe138c8125fe3",
+    "token": "tok_cbaa7ce2c07b307e7da711a6813e6c765e748b5c591a1b0d",
+    "level": 1,
+    "xp": 0,
+    "coins": 800,
+    "gems": 50,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 0,
+      "wins": 0,
+      "losses": 0,
+      "kills": 0,
+      "bestTerritory": 0,
+      "elo": 1000,
+      "peakElo": 1000
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1792345556799,
+    "updatedAt": 1792345556807
+  },
+  {
+    "id": "usr_5fa0814730f2aa3c",
+    "uuid": "8af6b9e8-0375-4732-acf9-365051b07d0b",
+    "username": "SecAuditor_2327",
+    "passwordSalt": "bfb08af9452c4541d605ba95aafae030",
+    "passwordHash": "020d9a719eff2284f859e60aa53f5811adccbd83120475281ac68c2d3918a30d84a20aea124db7a53d6866908965f91e0b617f2286967f7f983bc6e542382e09",
+    "token": "tok_204beb8d8f1627437e3752e922178a2ed9ad89feab232ebd",
+    "level": 2,
+    "xp": 100,
+    "coins": 1965,
+    "gems": 65,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 1,
+      "wins": 1,
+      "losses": 0,
+      "kills": 2,
+      "bestTerritory": 50,
+      "elo": 1025,
+      "peakElo": 1025
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1792378631886,
+    "updatedAt": 1792378631907
+  },
+  {
+    "id": "usr_5a5f370642115a0b",
+    "uuid": "c4a38895-e1f2-4056-aa3a-72debbc22400",
+    "username": "AlphaPlayer_4542",
+    "passwordSalt": "f7e0feb57f6c78b8f734c5ad05632bf1",
+    "passwordHash": "9fdaac737133ad40a7a38d5e18813df080a5dcfca44e0d7d92fafe65a565b168d00dbd1b3693eef44a15393caa2a0d4c642aaef1072e6a1a2327904f90e56c4f",
+    "token": "tok_4ddfeab6e48f5ae4e1d63c239449f03182ae9687b3643b75",
+    "level": 2,
+    "xp": 264,
+    "coins": 2093,
+    "gems": 75,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie",
+      "flag:tiger"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "tiger",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 1,
+      "wins": 1,
+      "losses": 0,
+      "kills": 6,
+      "bestTerritory": 82,
+      "elo": 1025,
+      "peakElo": 1025
+    },
+    "lastDailyClaim": 1792378631955,
+    "createdAt": 1792378631943,
+    "updatedAt": 1792378635103
+  },
+  {
+    "id": "usr_0f302c33de093f3b",
+    "uuid": "1054edbc-2f8e-4153-a9bc-bef71ae39803",
+    "username": "BetaPlayer_3938",
+    "passwordSalt": "eb2e0ed04fa8b77cd047a1532a18f294",
+    "passwordHash": "95d3a5f34a223d2b473ff6201d48bd4fbac9434bbc6789dd41ebaaa2b2b13ac70794be0eae50864c913a8889905a938ac6919ba3ce32b2fadd0f8a8b8af38a1d",
+    "token": "tok_d0550cfddc459f7407159a0c53eb4db866a1aa3e0380455e",
+    "level": 1,
+    "xp": 0,
+    "coins": 800,
+    "gems": 50,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 0,
+      "wins": 0,
+      "losses": 0,
+      "kills": 0,
+      "bestTerritory": 0,
+      "elo": 1000,
+      "peakElo": 1000
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1792378631993,
+    "updatedAt": 1792378631999
+  },
+  {
+    "id": "usr_94766ff48c1a07fd",
+    "uuid": "4189f5b2-c528-4c83-9aca-a1d36cdd90fa",
+    "username": "SecAuditor_8062",
+    "passwordSalt": "992ca81f1c01de586ceb7493c1e7b923",
+    "passwordHash": "748dca693011ba2d34614fbae2f2c2f850d1b6baf1f2f7d9f7a594957b8ef4288a8a298b61c3e477b4eeecf63b0caf6f79bac4db885246624f2821c6afccf7f1",
+    "token": "tok_096553f2e9d26c67bdd612dc8d3ca95d02e69dfa4b087dbb",
+    "level": 2,
+    "xp": 100,
+    "coins": 1965,
+    "gems": 65,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 1,
+      "wins": 1,
+      "losses": 0,
+      "kills": 2,
+      "bestTerritory": 50,
+      "elo": 1025,
+      "peakElo": 1025
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1792390648306,
+    "updatedAt": 1792390648322
+  },
+  {
+    "id": "usr_f18c87a7d92dba2c",
+    "uuid": "ff29241c-66f6-4979-994b-280ab3cbb593",
+    "username": "AlphaPlayer_3989",
+    "passwordSalt": "6398836259c2510adb0f608a864adf84",
+    "passwordHash": "62721a6577de4a68837896565ad80e246fe9cb404b0f8ece09356fe75501b723be6875f15da3218a5eeba28e0cad7d0bc5ca6088559d11e1ae31e29429e2a71e",
+    "token": "tok_213032166a26eb1eca4aceb49e1a458d716e748c1c42de40",
+    "level": 2,
+    "xp": 264,
+    "coins": 2093,
+    "gems": 75,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie",
+      "flag:tiger"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "tiger",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 1,
+      "wins": 1,
+      "losses": 0,
+      "kills": 6,
+      "bestTerritory": 82,
+      "elo": 1025,
+      "peakElo": 1025
+    },
+    "lastDailyClaim": 1792390648368,
+    "createdAt": 1792390648356,
+    "updatedAt": 1792390651515
+  },
+  {
+    "id": "usr_a2ee53b8749682a0",
+    "uuid": "f331e843-1ce5-4780-a01c-de60da764d41",
+    "username": "BetaPlayer_6741",
+    "passwordSalt": "48c7f656315fbb59ef053b0253e725c7",
+    "passwordHash": "584ec50827e11fadf52ed66e3b19494b2471b5419fe934cb9bf365857ead279fdc9298ae8d53600e8b1e77e187a23ab8a5bf9a9dc976a1d554cad1d04fe05476",
+    "token": "tok_f09c7c35a352e9b3a16cafda54b92ee8e553e51d45b8a820",
+    "level": 1,
+    "xp": 0,
+    "coins": 800,
+    "gems": 50,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 0,
+      "wins": 0,
+      "losses": 0,
+      "kills": 0,
+      "bestTerritory": 0,
+      "elo": 1000,
+      "peakElo": 1000
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1792390648407,
+    "updatedAt": 1792390648412
+  },
+  {
+    "id": "usr_dda58e6c380fa3ec",
+    "uuid": "2b838d20-03dc-4709-9374-f95d22916c56",
+    "username": "SecAuditor_6235",
+    "passwordSalt": "900c260279722e0e260538dec8026880",
+    "passwordHash": "ff82052ad78b415ed4ec0651ccdced30cc5770f368f74a0ee77bce37d2abc3272297bf068a6045a29cbc9c76d621682aef3332ab3be89ee2fdfeaf49d9513072",
+    "token": "tok_4f2dcb92afd205e47e70fafd38ad15f06dc3b5d500931a5a",
+    "level": 2,
+    "xp": 100,
+    "coins": 1965,
+    "gems": 65,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 1,
+      "wins": 1,
+      "losses": 0,
+      "kills": 2,
+      "bestTerritory": 50,
+      "elo": 1025,
+      "peakElo": 1025
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1792391955027,
+    "updatedAt": 1792391955045
+  },
+  {
+    "id": "usr_e14f714bf69aab85",
+    "uuid": "db88f0cd-05bc-474d-bc65-baacbf510d02",
+    "username": "AlphaPlayer_3189",
+    "passwordSalt": "97f32ac32cbb19d1086b38db3ba878f6",
+    "passwordHash": "ebe46f3409541047185c3a1c361b1c3b5d6cd4e6059894ef10f05aef650ecfe9a1e7506b8f714927ddbe5bda83089cf7953cb076f6e0913ea8e2fd74c32cc1ec",
+    "token": "tok_dd3effdae70a96f5d881a288072e7708aaa876514a941451",
+    "level": 2,
+    "xp": 264,
+    "coins": 2093,
+    "gems": 75,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie",
+      "flag:tiger"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "tiger",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 1,
+      "wins": 1,
+      "losses": 0,
+      "kills": 6,
+      "bestTerritory": 82,
+      "elo": 1025,
+      "peakElo": 1025
+    },
+    "lastDailyClaim": 1792391955091,
+    "createdAt": 1792391955078,
+    "updatedAt": 1792391958238
+  },
+  {
+    "id": "usr_50d326b3c48598db",
+    "uuid": "d1debf5c-9fd4-4931-b877-d2863bdc7909",
+    "username": "BetaPlayer_4541",
+    "passwordSalt": "85729a4e41c8ed61b5d16c6db15df1be",
+    "passwordHash": "8a651bd9e66d347430ad0ff89c6cd39d0770016f44427961b94e839748b651c1cce9b426c2cc9ddb2a4f6e761c41b823a875b3a3f3ab9ab698ad34ae733f3644",
+    "token": "tok_7435d27fe08fe1200836bae48e6556985e8b7de29e4d4e52",
+    "level": 1,
+    "xp": 0,
+    "coins": 800,
+    "gems": 50,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 0,
+      "wins": 0,
+      "losses": 0,
+      "kills": 0,
+      "bestTerritory": 0,
+      "elo": 1000,
+      "peakElo": 1000
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1792391955126,
+    "updatedAt": 1792391955134
+  },
+  {
+    "id": "usr_369ada3d833b5024",
+    "uuid": "4a8f7b71-cbcb-4288-aa89-c2cb5060de73",
+    "username": "SecAuditor_7794",
+    "passwordSalt": "26a109a13830bf613ba729582bb902b4",
+    "passwordHash": "84cb8760fb1ec5c6decab112db42c9c7364c03978e9999b67b777411053f6f9d17be972c29059e7f3aef9ab7e1c6a18f55f0096b9609567a874f8b929c7bd5b5",
+    "token": "tok_3d0e597456aa5f5977470eb8f70c5bc6e3170b0610e92d64",
+    "level": 2,
+    "xp": 100,
+    "coins": 1965,
+    "gems": 65,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 1,
+      "wins": 1,
+      "losses": 0,
+      "kills": 2,
+      "bestTerritory": 50,
+      "elo": 1025,
+      "peakElo": 1025
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1792394089677,
+    "updatedAt": 1792394089699
+  },
+  {
+    "id": "usr_b559314e298f19a8",
+    "uuid": "f75ede28-649c-438a-aff6-856e7e4003db",
+    "username": "AlphaPlayer_3173",
+    "passwordSalt": "007a0ed291b03653dd053a28fdbc0973",
+    "passwordHash": "4661bec3752983d3a95bff46f451bce1214f0d81b9665926d8b8fca77883d3117be8d7e50c24b09793bfb3187d970e4adf9370332136b158e412ae3767d81f89",
+    "token": "tok_0d1e4ff737738b68af5a93a0750417bf194db204982ce957",
+    "level": 2,
+    "xp": 264,
+    "coins": 2093,
+    "gems": 75,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie",
+      "flag:tiger"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "tiger",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 1,
+      "wins": 1,
+      "losses": 0,
+      "kills": 6,
+      "bestTerritory": 82,
+      "elo": 1025,
+      "peakElo": 1025
+    },
+    "lastDailyClaim": 1792394089768,
+    "createdAt": 1792394089754,
+    "updatedAt": 1792394092925
+  },
+  {
+    "id": "usr_15774004ddc737ec",
+    "uuid": "e389ed8c-4d81-4592-bb95-886403914086",
+    "username": "BetaPlayer_9124",
+    "passwordSalt": "b7361554fe213431f4bc4d67befc2246",
+    "passwordHash": "373aa6f92a060b2b08f820731339c03922fea2e43bf9f49c4a2b4bcff8a4f7361835aab94ad73a062a7797ce3e8e2304dbaa3e23a5a75b6f8693afeb4d8ef402",
+    "token": "tok_b449223441a8bcf8cba03d52279c1651fd3f7f64034940f1",
+    "level": 1,
+    "xp": 0,
+    "coins": 800,
+    "gems": 50,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 0,
+      "wins": 0,
+      "losses": 0,
+      "kills": 0,
+      "bestTerritory": 0,
+      "elo": 1000,
+      "peakElo": 1000
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1792394089815,
+    "updatedAt": 1792394089822
+  },
+  {
+    "id": "usr_a7580836143305ae",
+    "uuid": "4250e0ba-60f0-4a63-9269-2f0ce5c765a8",
+    "username": "SecAuditor_6174",
+    "passwordSalt": "031ee13e663442c675710291211eb030",
+    "passwordHash": "f599893410943f7325ec4f34700db47f314a29ce6a4983b15ea832b96ad05b4a35e4dca95faaab510ed39f5da67e642db8d3618810674f1c6a9128ca558c5508",
+    "token": "tok_5f27da14a43f7516e8e27b9bbd877f1e9820645b621108f5",
+    "level": 2,
+    "xp": 100,
+    "coins": 1965,
+    "gems": 65,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 1,
+      "wins": 1,
+      "losses": 0,
+      "kills": 2,
+      "bestTerritory": 50,
+      "elo": 1025,
+      "peakElo": 1025
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1792400491058,
+    "updatedAt": 1792400491075
+  },
+  {
+    "id": "usr_53482b4fbfd7c711",
+    "uuid": "84fcb0f7-c5f3-4005-abc6-0eca09198ae2",
+    "username": "AlphaPlayer_8242",
+    "passwordSalt": "413fe0c50537a08603b4970b82a4bb65",
+    "passwordHash": "e64f54001a2fd12ff432cd121f645e017ddf3d592d21ea3a781d2cf74a59553b29a5f2e5e3f060c2fe84f5dcdd9b16dd1a73c79261a531473ae6e323ead31978",
+    "token": "tok_d080d14cd2070181e9696c3305c56ec9676322c84591a826",
+    "level": 2,
+    "xp": 264,
+    "coins": 2093,
+    "gems": 75,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie",
+      "flag:tiger"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "tiger",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 1,
+      "wins": 1,
+      "losses": 0,
+      "kills": 6,
+      "bestTerritory": 82,
+      "elo": 1025,
+      "peakElo": 1025
+    },
+    "lastDailyClaim": 1792400491138,
+    "createdAt": 1792400491122,
+    "updatedAt": 1792400494296
+  },
+  {
+    "id": "usr_6c01ce16f4977042",
+    "uuid": "d8d3efcc-1e0e-4fe0-9158-5f84ea49bf4e",
+    "username": "BetaPlayer_3362",
+    "passwordSalt": "97147c86946b67be10c398dea44f6a7e",
+    "passwordHash": "56119c63fd57fd841c6e1752aa268c2da44d1b75b8742e75670af6f4de5c3b41bada34c1416435cd8d9c2cc5a702f4dac5cd0513db49688109ee58d7a0e51c5e",
+    "token": "tok_1dab98230365aae24cb46f21fc3de672d497217a72934ed2",
+    "level": 1,
+    "xp": 0,
+    "coins": 800,
+    "gems": 50,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 0,
+      "wins": 0,
+      "losses": 0,
+      "kills": 0,
+      "bestTerritory": 0,
+      "elo": 1000,
+      "peakElo": 1000
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1792400491182,
+    "updatedAt": 1792400491193
+  },
+  {
+    "id": "usr_1044ccd8dcb2ca5f",
+    "uuid": "b85b41ee-7c77-443f-af47-4de1a0932b5c",
+    "username": "SecAuditor_8270",
+    "passwordSalt": "49f76997e28bb26f84ff8e948acbc5b2",
+    "passwordHash": "e45b8873ab28da77dae273e0610372231f454483a058511a1c3d2a9a2cdef5ab8337bff35e2d62a263ab731ed3742817371f3cd2c8424a7cc424f68167c9a3eb",
+    "token": "tok_14d7911f9dfa1362a9bdf7cdce3f214fb6dd7b6948f426f2",
+    "level": 2,
+    "xp": 100,
+    "coins": 1965,
+    "gems": 65,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 1,
+      "wins": 1,
+      "losses": 0,
+      "kills": 2,
+      "bestTerritory": 50,
+      "elo": 1025,
+      "peakElo": 1025
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1792405323533,
+    "updatedAt": 1792405323555
+  },
+  {
+    "id": "usr_b6e86df067eb7d6b",
+    "uuid": "9ea289ea-2083-4177-b4f8-39edc3b27136",
+    "username": "AlphaPlayer_5989",
+    "passwordSalt": "684ec4f03a8c5b82c6251d613abd0916",
+    "passwordHash": "88e716e62a8e0fa09be13e83949f91f8bbc28aafb5283be45cf2806e29bf47dc6d20f3de00288108da5e2957bd14815d6d531f91291925c24eadba8e6889c20a",
+    "token": "tok_ff7469eb55fcdc1896424f55b82323c661461885768459f0",
+    "level": 2,
+    "xp": 264,
+    "coins": 2093,
+    "gems": 75,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie",
+      "flag:tiger"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "tiger",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 1,
+      "wins": 1,
+      "losses": 0,
+      "kills": 6,
+      "bestTerritory": 82,
+      "elo": 1025,
+      "peakElo": 1025
+    },
+    "lastDailyClaim": 1792405323610,
+    "createdAt": 1792405323593,
+    "updatedAt": 1792405326775
+  },
+  {
+    "id": "usr_75189a6b51eb244f",
+    "uuid": "6b55c9b7-bdb1-48b1-9afa-4e0f8dcfad99",
+    "username": "BetaPlayer_6563",
+    "passwordSalt": "5e0d2bcb804a551732ec7015cd1b073a",
+    "passwordHash": "d736afedb19c3f350c086b9c1cb65bf171175a7528d0acc6dfcad54aed95ec5566bd19549cd36bdfb71c46788ac3ff893e0800748f5b4430b6184253f18fdfb6",
+    "token": "tok_e12ad468cbaba8b77298e98506894e1e183a272a06ded4e9",
+    "level": 1,
+    "xp": 0,
+    "coins": 800,
+    "gems": 50,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 0,
+      "wins": 0,
+      "losses": 0,
+      "kills": 0,
+      "bestTerritory": 0,
+      "elo": 1000,
+      "peakElo": 1000
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1792405323660,
+    "updatedAt": 1792405323670
+  },
+  {
+    "id": "usr_ae1ff16a3aec10a5",
+    "uuid": "80065b2e-92e0-4cbe-aeaa-6561119e3125",
+    "username": "SecAuditor_8621",
+    "passwordSalt": "fb596181b1fc2cf27836b1d12f0316e5",
+    "passwordHash": "c98c0e7017b253c12cb780c0c06dee550b225e82aafbe34785f41f53a2a37e4feddd7c89ef3f6478c7dd2748187936a71ec0ff5a3c7702910463c68e67044a82",
+    "token": "tok_cf8777860749b3792db3ec52f6c092402f1207d00c66d3f0",
+    "level": 2,
+    "xp": 100,
+    "coins": 1965,
+    "gems": 65,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 1,
+      "wins": 1,
+      "losses": 0,
+      "kills": 2,
+      "bestTerritory": 50,
+      "elo": 1025,
+      "peakElo": 1025
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1792406187628,
+    "updatedAt": 1792406187652
+  },
+  {
+    "id": "usr_1cc56fd4502ecc95",
+    "uuid": "61080dde-b4fa-4cec-8fa1-aeaeba5ba73d",
+    "username": "AlphaPlayer_7708",
+    "passwordSalt": "9cf995b308ad663b958a52ac9d5ec14a",
+    "passwordHash": "844fd2bb5a352e89420cabfe462669654e78cb7b0a691ba8725e7f637e1786de3beae522dff021a04756ec4a084ccbdc7b5b0c8209111926a288113e7ea4b48d",
+    "token": "tok_c75f42cdb1651c00125f3494def21d6ed0e3c892a3a4db87",
+    "level": 1,
+    "xp": 0,
+    "coins": 1000,
+    "gems": 60,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie",
+      "flag:tiger"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "tiger",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 0,
+      "wins": 0,
+      "losses": 0,
+      "kills": 0,
+      "bestTerritory": 0,
+      "elo": 1000,
+      "peakElo": 1000
+    },
+    "lastDailyClaim": 1792406187705,
+    "createdAt": 1792406187690,
+    "updatedAt": 1792406187705
+  },
+  {
+    "id": "usr_4375043700372b95",
+    "uuid": "2f158b52-fb1a-4aaf-b0a5-76d16e2e45fc",
+    "username": "SecAuditor_7009",
+    "passwordSalt": "945320619722b0754089d6332b4a4912",
+    "passwordHash": "3d14b7f57fee7cb79165e0d5a4ef0f46a380e6be6a63397a9aedf0e6443ae53edc9fe9a5b544f8d18b10a19aac88d7831264e52a3a6b0756544b6c8947eca9ed",
+    "token": "tok_aa4a0de2934a5415851b680c5cdf1e18de165ba4753d69af",
+    "level": 2,
+    "xp": 100,
+    "coins": 1965,
+    "gems": 65,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 1,
+      "wins": 1,
+      "losses": 0,
+      "kills": 2,
+      "bestTerritory": 50,
+      "elo": 1025,
+      "peakElo": 1025
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1792406219790,
+    "updatedAt": 1792406219814
+  },
+  {
+    "id": "usr_9adc23c6f40c0cae",
+    "uuid": "b3eddf21-50ca-47b7-8ae6-815c1b39c4c9",
+    "username": "AlphaPlayer_8482",
+    "passwordSalt": "a717d3baf3d8c78bbc9fd0c1250914b6",
+    "passwordHash": "f209aeeb50f995f0d542eb5f1683bbb479cebb20dd9744a8babb6a330f39aa058a57ef555e2cbf073ff5a4904bb056db3aca797d2f93d639dbb1d7ce03acface",
+    "token": "tok_209dda28a1485934b4a4219d68b03790495d9d97cc42f552",
+    "level": 2,
+    "xp": 264,
+    "coins": 2093,
+    "gems": 75,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie",
+      "flag:tiger"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "tiger",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 1,
+      "wins": 1,
+      "losses": 0,
+      "kills": 6,
+      "bestTerritory": 82,
+      "elo": 1025,
+      "peakElo": 1025
+    },
+    "lastDailyClaim": 1792406219864,
+    "createdAt": 1792406219851,
+    "updatedAt": 1792406223017
+  },
+  {
+    "id": "usr_46f784f44ffa34bf",
+    "uuid": "8e58530c-609d-467e-bc72-deaba1d2b5f3",
+    "username": "BetaPlayer_6751",
+    "passwordSalt": "cb0d864fbc1044349b493813edf3d5c2",
+    "passwordHash": "885a1c3a0f0d278307ec82e4f472fc6a6f59d24a4f738593dc39c8f60037b95d33294bc28635079d506d2f2f4bc5756f2f56fc7a1b5944e90271bbb45d701054",
+    "token": "tok_60d7b419c7414261278d3a983c8a7635c97baf719b3cdcf9",
+    "level": 1,
+    "xp": 0,
+    "coins": 800,
+    "gems": 50,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 0,
+      "wins": 0,
+      "losses": 0,
+      "kills": 0,
+      "bestTerritory": 0,
+      "elo": 1000,
+      "peakElo": 1000
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1792406219906,
+    "updatedAt": 1792406219913
+  },
+  {
+    "id": "usr_0d12772c64e3d67c",
+    "uuid": "14f576e7-ea84-4b0a-977b-47b9bd407d43",
+    "username": "SecAuditor_1170",
+    "passwordSalt": "cf496aed83a55e92316902f5bf9a2b41",
+    "passwordHash": "92586bb2c6da2b96a9878f533212744e21ebfef25be1a144357c18cdd379df020f48af038b8f7c4e88c056c418d57353775d52314c712ee51184d4f25470af99",
+    "token": "tok_7238072a12419fe75b845463e1786bdbcc196be4343ebd65",
+    "level": 2,
+    "xp": 100,
+    "coins": 1965,
+    "gems": 65,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 1,
+      "wins": 1,
+      "losses": 0,
+      "kills": 2,
+      "bestTerritory": 50,
+      "elo": 1025,
+      "peakElo": 1025
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1792407065160,
+    "updatedAt": 1792407065179
+  },
+  {
+    "id": "usr_8a64f9930bba6d56",
+    "uuid": "022ae31e-8a57-40c9-821f-b49ddc6dcd59",
+    "username": "AlphaPlayer_4084",
+    "passwordSalt": "9d93ffa9dc68037a53a33ab10475d9db",
+    "passwordHash": "0773a21eb44d07edb5594e4f17316665f86e2962e89e57fd5dc16ddbba78f8d1628b00435ca32da0c6967c55d0a17f80ad87d9e03646a7dece259309fe8a27a4",
+    "token": "tok_04d503073812411e14778f4e95af5164d44e3dd4666a4261",
+    "level": 2,
+    "xp": 264,
+    "coins": 2093,
+    "gems": 75,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie",
+      "flag:tiger"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "tiger",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 1,
+      "wins": 1,
+      "losses": 0,
+      "kills": 6,
+      "bestTerritory": 82,
+      "elo": 1025,
+      "peakElo": 1025
+    },
+    "lastDailyClaim": 1792407065268,
+    "createdAt": 1792407065244,
+    "updatedAt": 1792407068435
+  },
+  {
+    "id": "usr_30961038aed4c63e",
+    "uuid": "6e8be834-e974-4928-a61c-d0f192e0da80",
+    "username": "BetaPlayer_5437",
+    "passwordSalt": "d36fdab82f1a6791c39d67447bffbdc6",
+    "passwordHash": "5f88696ac2e2b91a51754fd9c6f12789fbe9e2388fb898d62fe1ee8c0f73e3bc3de47c7400b9d75b86d0dd60838b8f3caa3eff510bbf69e2944f822efa9c3227",
+    "token": "tok_fcab02511bdc59399d7ecba873cd5ba8e9dbc86af5e75a34",
+    "level": 1,
+    "xp": 0,
+    "coins": 800,
+    "gems": 50,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 0,
+      "wins": 0,
+      "losses": 0,
+      "kills": 0,
+      "bestTerritory": 0,
+      "elo": 1000,
+      "peakElo": 1000
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1792407065321,
+    "updatedAt": 1792407065331
+  },
+  {
+    "id": "usr_423218f336ad571d",
+    "uuid": "f06e06d5-b80c-49e4-a98b-c0cf3ef18c64",
+    "username": "SecAuditor_2709",
+    "passwordSalt": "fc06f401c480eeb152de122e5caf3ef0",
+    "passwordHash": "7610ef3810ef29cf45bbddf97b990e060ecdb8c04869041ac215c0720a52460ed8723e611892e20d10759f0d285c7dba618b120c1545ac257f336bbdca536228",
+    "token": "tok_edbacc76fcc344124952b23459fb339515e098e90764cb17",
+    "level": 2,
+    "xp": 100,
+    "coins": 1965,
+    "gems": 65,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 1,
+      "wins": 1,
+      "losses": 0,
+      "kills": 2,
+      "bestTerritory": 50,
+      "elo": 1025,
+      "peakElo": 1025
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1792413998337,
+    "updatedAt": 1792413998355
+  },
+  {
+    "id": "usr_c9b348dbc43a5a0e",
+    "uuid": "b42a2bc1-888f-4f2b-b8d2-083c6ff95d1c",
+    "username": "AlphaPlayer_5137",
+    "passwordSalt": "c3116f3114a628ef6fd6fa7a49c0d57b",
+    "passwordHash": "da8bfd3be32848cee66934cb1ac64c953d8c4f9738ff51e8c764fd119bb53c93c844e8a84709b244709222933fb92d3052aa0b6844ca9061e5435b93583c2711",
+    "token": "tok_b097563886098295ab2d1483a15bfce632a78036bb9ddc05",
+    "level": 2,
+    "xp": 264,
+    "coins": 2093,
+    "gems": 75,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie",
+      "flag:tiger"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "tiger",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 1,
+      "wins": 1,
+      "losses": 0,
+      "kills": 6,
+      "bestTerritory": 82,
+      "elo": 1025,
+      "peakElo": 1025
+    },
+    "lastDailyClaim": 1792413998420,
+    "createdAt": 1792413998401,
+    "updatedAt": 1792414001568
+  },
+  {
+    "id": "usr_fb583c028732ca55",
+    "uuid": "6d40e977-f4f5-4e81-ac0f-218d1d54c075",
+    "username": "BetaPlayer_2438",
+    "passwordSalt": "31f735c73b832ed898d39fff2964c566",
+    "passwordHash": "ffaea9fc58a0716475553ef585e7b23cd0653f0e687c7f5f642b24e6371299d7e2808067d9db3683fe5df2f0ed22405b759ba056fc3cef2d840d515da1dd095e",
+    "token": "tok_c3a04fc0db1611b877aaf98b08de9a5f34d8acfb3bcbb69d",
+    "level": 1,
+    "xp": 0,
+    "coins": 800,
+    "gems": 50,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 0,
+      "wins": 0,
+      "losses": 0,
+      "kills": 0,
+      "bestTerritory": 0,
+      "elo": 1000,
+      "peakElo": 1000
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1792413998457,
+    "updatedAt": 1792413998464
+  },
+  {
+    "id": "usr_478b95c1b9e24074",
+    "uuid": "b51b4cbb-1931-4654-b9d2-18a3d81886c2",
+    "username": "SecAuditor_6768",
+    "passwordSalt": "7cdd994fb51817635fc1ad67133800bb",
+    "passwordHash": "3dbbd27c0cd2f8b832aab0539bbfcfb82f8535612ecd578eb732af2f30f2882798fa53c77c2dd05984a65af2c376d5a35e0e1e73a8fb2cdad33835108a648514",
+    "token": "tok_c539ee5dda6a24d9cc060bad08d7731489fcb75668416367",
+    "level": 2,
+    "xp": 100,
+    "coins": 1965,
+    "gems": 65,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 1,
+      "wins": 1,
+      "losses": 0,
+      "kills": 2,
+      "bestTerritory": 50,
+      "elo": 1025,
+      "peakElo": 1025
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1792414798738,
+    "updatedAt": 1792414798755
+  },
+  {
+    "id": "usr_b6e31788e3bf76e5",
+    "uuid": "bc852c81-4946-4a78-be33-f94062bdfbe0",
+    "username": "AlphaPlayer_5780",
+    "passwordSalt": "733b0338fabf1755f23fab6589eb7567",
+    "passwordHash": "074339b781ab20a0579496153ee86ed6af4ba139ec57290de6e12c1359ded508a8ee7dd8de3b7b67f094f8ba6bfb7e7fd1b5fc3464bd44bd3d3eb1c67a6dba4f",
+    "token": "tok_f0967e2f2eb956e45fe9c2841cddfe413c7b557de88f9f88",
+    "level": 2,
+    "xp": 264,
+    "coins": 2093,
+    "gems": 75,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie",
+      "flag:tiger"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "tiger",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 1,
+      "wins": 1,
+      "losses": 0,
+      "kills": 6,
+      "bestTerritory": 82,
+      "elo": 1025,
+      "peakElo": 1025
+    },
+    "lastDailyClaim": 1792414798816,
+    "createdAt": 1792414798801,
+    "updatedAt": 1792414801971
+  },
+  {
+    "id": "usr_024793edb474357e",
+    "uuid": "d39e05f5-0f79-44ea-a289-abbaa16e09a3",
+    "username": "BetaPlayer_4166",
+    "passwordSalt": "b63ffa52a40ecb06ad52dd1714ee43a9",
+    "passwordHash": "d0d6374a9572ad061cada69826cf73d7837ee97786d34d95e4213883a268c06259f4ad8772c920b382ac6a68b16b56f4c68d0f5affcbf90655cf376084f46a5a",
+    "token": "tok_9988e2c43b343ab207fb2c9d65bd9e1d6b0fd8cd2ef0daec",
+    "level": 1,
+    "xp": 0,
+    "coins": 800,
+    "gems": 50,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 0,
+      "wins": 0,
+      "losses": 0,
+      "kills": 0,
+      "bestTerritory": 0,
+      "elo": 1000,
+      "peakElo": 1000
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1792414798862,
+    "updatedAt": 1792414798868
+  },
+  {
+    "id": "usr_d685e3f2213d481c",
+    "uuid": "966cf83e-b4c4-4565-bfb7-b148b1459a3d",
+    "username": "SecAuditor_3676",
+    "passwordSalt": "ace4b186277e99a1604bca4a96d5626e",
+    "passwordHash": "d8f268a910740d8a45f9768d56a1465a900d1d487ddd2702036a1dec5382b994cd11d73439bea10bcf5aadd21c061aac59b6649b6d5da0b777efa13050f98615",
+    "token": "tok_4eb9989854ac971ed24264f2508c3085a54149e88afe9efc",
+    "level": 2,
+    "xp": 100,
+    "coins": 1965,
+    "gems": 65,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 1,
+      "wins": 1,
+      "losses": 0,
+      "kills": 2,
+      "bestTerritory": 50,
+      "elo": 1025,
+      "peakElo": 1025
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1792415874437,
+    "updatedAt": 1792415874457
+  },
+  {
+    "id": "usr_bfcf84352c7bd6ec",
+    "uuid": "6750bb60-3e18-47aa-9f72-b4c6590d53dd",
+    "username": "AlphaPlayer_6376",
+    "passwordSalt": "35825d8043b3a701cd1ef1fbeadea852",
+    "passwordHash": "236f1bb467d83fcd8c647feeeb07ebc5b2cbacd247accc66beb945238c1462971ca76c13440e5de1dc158262d4fed19e6ac42ceb3e2cfeacc713b8d8841657f6",
+    "token": "tok_b51016504aaf105e292d18a740dab11afac8ecf01c807189",
+    "level": 2,
+    "xp": 264,
+    "coins": 2093,
+    "gems": 75,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie",
+      "flag:tiger"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "tiger",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 1,
+      "wins": 1,
+      "losses": 0,
+      "kills": 6,
+      "bestTerritory": 82,
+      "elo": 1025,
+      "peakElo": 1025
+    },
+    "lastDailyClaim": 1792415874521,
+    "createdAt": 1792415874509,
+    "updatedAt": 1792415877669
+  },
+  {
+    "id": "usr_479460c4c5904d67",
+    "uuid": "0015c360-5d90-4be1-9983-ecc188d84bb9",
+    "username": "BetaPlayer_2855",
+    "passwordSalt": "19dcf07b1ad9bb0ddae0a2ec6c7ebf01",
+    "passwordHash": "715b198e2fa186ba60e4d286d38eb7c1c6f6787b2b195ccbd59c8fcd87a6022bcc25da2ecc869a42530cc2b4516e4792d35b073a373d6c7f9a5f79b6fc7801c4",
+    "token": "tok_262c7cfd3952e70921f761b770515f18cb0e534433793499",
+    "level": 1,
+    "xp": 0,
+    "coins": 800,
+    "gems": 50,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 0,
+      "wins": 0,
+      "losses": 0,
+      "kills": 0,
+      "bestTerritory": 0,
+      "elo": 1000,
+      "peakElo": 1000
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1792415874560,
+    "updatedAt": 1792415874565
+  },
+  {
+    "id": "usr_31820a5eab1b3b93",
+    "uuid": "78592277-560c-4e64-bdcd-6b4882218ca7",
+    "username": "SecAuditor_1781",
+    "passwordSalt": "661570a2b6936659583d577f82bcc11f",
+    "passwordHash": "2a3bba8a6cc8c0c159691d1200e4856c7fb02cfc0ee94857590b3c423a91a8b9bee2ad31630b690d03c61de6165830f4a25dd68b9331d307cc87aeeed0fa4e66",
+    "token": "tok_18eca79023a9709be8a2f440841bdd1d3c347f391b6133c5",
+    "level": 2,
+    "xp": 100,
+    "coins": 1965,
+    "gems": 65,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 1,
+      "wins": 1,
+      "losses": 0,
+      "kills": 2,
+      "bestTerritory": 50,
+      "elo": 1025,
+      "peakElo": 1025
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1792418579390,
+    "updatedAt": 1792418579413
+  },
+  {
+    "id": "usr_2ba8ad5a57d627d4",
+    "uuid": "3bd43633-46e5-479b-983e-5672468caf4c",
+    "username": "AlphaPlayer_5515",
+    "passwordSalt": "72fe3c2804b83b483e965eebfeb1c9ff",
+    "passwordHash": "77b6f1969d2d523d0e862c431adb11e83f7de41982a5d5ea7cf24133300a000fd7ac3e2cf4578124d14eb9fdbf6fd1ea0308e543294550f23b3a674c491b8698",
+    "token": "tok_0608b90d9c0ece1da670cdeafbdf5dd30c3bf775c425937e",
+    "level": 2,
+    "xp": 264,
+    "coins": 2093,
+    "gems": 75,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie",
+      "flag:tiger"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "tiger",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 1,
+      "wins": 1,
+      "losses": 0,
+      "kills": 6,
+      "bestTerritory": 82,
+      "elo": 1025,
+      "peakElo": 1025
+    },
+    "lastDailyClaim": 1792418579481,
+    "createdAt": 1792418579463,
+    "updatedAt": 1792418582646
+  },
+  {
+    "id": "usr_0da92aa8841cbb1f",
+    "uuid": "b5d4aa04-7be8-45d6-b894-c9555a2981cc",
+    "username": "BetaPlayer_3723",
+    "passwordSalt": "ebbc4aaf187111be07f3bd59e1567343",
+    "passwordHash": "00bf5a3647241513703a2e916666cbb2249fc748eb7c83b8b3f0322a4f800c7f3a6d7c5954a2ebdbdebad7a73d2f20dc3f4581847eaaf7deea2ba120934b09f4",
+    "token": "tok_40fb2e1f50a9c19d8f536f635b505e7330217433cdb91460",
+    "level": 1,
+    "xp": 0,
+    "coins": 800,
+    "gems": 50,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 0,
+      "wins": 0,
+      "losses": 0,
+      "kills": 0,
+      "bestTerritory": 0,
+      "elo": 1000,
+      "peakElo": 1000
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1792418579525,
+    "updatedAt": 1792418579543
+  },
+  {
+    "id": "usr_8e5217edba84ce2e",
+    "uuid": "e602a509-0a04-467c-936f-4e7fce1db462",
+    "username": "SecAuditor_9150",
+    "passwordSalt": "f8b734e25b2ecc65ebc6c1c4b582f884",
+    "passwordHash": "43b8dfa52e7a0ea0d6a4e303e31634305722c1b4197e9cc2ed017f1a6a2e2d2e8b459eac7624b59330013894ab0b2de6da46814d359bb277d94370026812d175",
+    "token": "tok_39f6379ecbfcf2b5435711c0549c195ddff5580693404a59",
+    "level": 2,
+    "xp": 100,
+    "coins": 1965,
+    "gems": 65,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 1,
+      "wins": 1,
+      "losses": 0,
+      "kills": 2,
+      "bestTerritory": 50,
+      "elo": 1025,
+      "peakElo": 1025
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1792418866757,
+    "updatedAt": 1792418866777
+  },
+  {
+    "id": "usr_0219f7453da3d151",
+    "uuid": "8bef967c-3c09-477c-935e-a2a224900544",
+    "username": "AlphaPlayer_6415",
+    "passwordSalt": "dd57dffc5dc7e52856027003da23cad5",
+    "passwordHash": "f7c8ba6d81788f85f8d47c52a7521226b204366845a4a3f98cfd77a9e31a7d7f74ce2d57641aea1bb9302692d67d3a5e0f1b8a42320571c772f70821c44e8d6c",
+    "token": "tok_714413141d073ce3deaa148cbb94a5e54674dabf6b433065",
+    "level": 2,
+    "xp": 264,
+    "coins": 2093,
+    "gems": 75,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie",
+      "flag:tiger"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "tiger",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 1,
+      "wins": 1,
+      "losses": 0,
+      "kills": 6,
+      "bestTerritory": 82,
+      "elo": 1025,
+      "peakElo": 1025
+    },
+    "lastDailyClaim": 1792418866840,
+    "createdAt": 1792418866822,
+    "updatedAt": 1792418869992
+  },
+  {
+    "id": "usr_8cf55ab20729cf99",
+    "uuid": "05bb8595-d840-4e5b-94dd-b53ba7e30348",
+    "username": "BetaPlayer_1393",
+    "passwordSalt": "74f97d9899058b80edb71c0206be37c0",
+    "passwordHash": "b406ae5afa00417b50b89dd0cd88459787ceff4f3fd14dc80fbd3e22fd1d48a370bbcc1f7734c7250997f63159ff5f9f8d90adcc43626509edc7bfcfbcb12713",
+    "token": "tok_17f2266aac9db99e16b208492befa2676ba55be75c693a6a",
+    "level": 1,
+    "xp": 0,
+    "coins": 800,
+    "gems": 50,
+    "clanTag": "",
+    "flag": "ir",
+    "title": "فرمانده تازه‌کار",
+    "inventory": [
+      "pattern:default",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "pattern": "pattern:default",
+      "flag": "ir",
+      "title": "فرمانده تازه‌کار"
+    },
+    "stats": {
+      "matchesPlayed": 0,
+      "wins": 0,
+      "losses": 0,
+      "kills": 0,
+      "bestTerritory": 0,
+      "elo": 1000,
+      "peakElo": 1000
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1792418866883,
+    "updatedAt": 1792418866888
+  },
+  {
+    "id": "usr_83628c6c5cd6",
+    "uuid": "dd19c3dc-b991-4842-a1b2-19e52debdffe",
+    "username": "Sardar_Arya",
+    "phone": "09123456789",
+    "passwordSalt": "5a365ca9b587a212df1d4c674f168cd0",
+    "passwordHash": "1ee4684b23db9baa50a97efab448e3a144cadfc889612e5bd644c0728174869b7f20c03d8a048166af8322ea8e83cfde8df4772914b52d970a439ed7f5319138",
+    "token": "tok_367c5c92cd1f01166daa155138e0e81bcffa313ee813933a",
+    "level": 1,
+    "xp": 0,
+    "coins": 1000,
+    "gems": 550,
+    "clanTag": "",
+    "flag": "flag:peace_dove",
+    "title": "title:rookie",
+    "inventory": [
+      "pattern:default",
+      "pattern:stripes:stripes",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "flag": "flag:peace_dove",
+      "title": "title:rookie"
+    },
+    "stats": {
+      "matchesPlayed": 0,
+      "wins": 0,
+      "losses": 0,
+      "kills": 0,
+      "bestTerritory": 0,
+      "elo": 1000,
+      "peakElo": 1000
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1792446387342,
+    "updatedAt": 1792446387365
+  },
+  {
+    "id": "usr_3723c9a44595",
+    "uuid": "5d8ff445-a027-4e1f-be45-2cbe2075ba79",
+    "username": "Brave_Warrior_99",
+    "phone": "09359998877",
+    "passwordSalt": "f6ee482a3281a84386ed6680c17bedac",
+    "passwordHash": "1936c5de9f50a47a606424fb083c67e7107fbd1ec9e6a4652d6baf767a7f55587054c8791de0250390434f85e82ca40e7b776ee9c2a4107f5dd82489aab7c0f5",
+    "token": "tok_1c2cabcd5645fae1d3055a545f5c482470b6e833b191e75a",
+    "level": 1,
+    "xp": 0,
+    "coins": 1000,
+    "gems": 50,
+    "clanTag": "",
+    "flag": "flag:peace_dove",
+    "title": "title:rookie",
+    "inventory": [
+      "pattern:default",
+      "pattern:stripes:stripes",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "flag": "flag:peace_dove",
+      "title": "title:rookie"
+    },
+    "stats": {
+      "matchesPlayed": 0,
+      "wins": 0,
+      "losses": 0,
+      "kills": 0,
+      "bestTerritory": 0,
+      "elo": 1000,
+      "peakElo": 1000
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1792479906499,
+    "updatedAt": 1792479906499
+  },
+  {
+    "id": "usr_1a9a40257e38",
+    "uuid": "c95774b9-8d4f-475e-b664-78718a35821e",
+    "username": "Commander_4567",
+    "phone": "09351234567",
+    "passwordSalt": "5b573e26c4ce9136af53a54f0b39b0c1",
+    "passwordHash": "8f10fb1533114b48d999c93157cff8c558263dfde5a54c643b710f5cd4b2b78ace985e74a437e03aabea3fab0d5e8ed0b15b652e040beca2998051950dd43475",
+    "token": "tok_6f73e6ab3a2c7ecb41beaf30ef3690c44ffd549cb98259a5",
+    "level": 1,
+    "xp": 0,
+    "coins": 1000,
+    "gems": 50,
+    "clanTag": "",
+    "flag": "flag:peace_dove",
+    "title": "title:rookie",
+    "inventory": [
+      "pattern:default",
+      "pattern:stripes:stripes",
+      "flag:peace_dove",
+      "title:rookie"
+    ],
+    "equipped": {
+      "flag": "flag:peace_dove",
+      "title": "title:rookie"
+    },
+    "stats": {
+      "matchesPlayed": 0,
+      "wins": 0,
+      "losses": 0,
+      "kills": 0,
+      "bestTerritory": 0,
+      "elo": 1000,
+      "peakElo": 1000
+    },
+    "lastDailyClaim": 0,
+    "createdAt": 1792479906537,
+    "updatedAt": 1792479906537
+  }
+]

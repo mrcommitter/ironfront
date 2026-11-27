@@ -1,0 +1,25 @@
+services:
+  ironfront:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        GIT_COMMIT: "ironfront-v1.0"
+    container_name: ironfront-game
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./data:/usr/src/app/data
+      - /etc/letsencrypt:/etc/letsencrypt:ro
+    environment:
+      - DOMAIN=${DOMAIN:-open.zguard.ir}
+      - GAME_ENV=${GAME_ENV:-dev}
+      - STANDALONE=${STANDALONE:-true}
+      - DISABLE_TURNSTILE=${DISABLE_TURNSTILE:-true}
+      - NUM_WORKERS=${NUM_WORKERS:-2}
+      - CDN_BASE=${CDN_BASE:-}
+      - API_KEY=${API_KEY:-IRONFRONT_DEV_KEY}
+      - ADMIN_BOT_API_KEY=${ADMIN_BOT_API_KEY:-IRONFRONT_ADMIN_KEY}
+      - TURNSTILE_SITE_KEY=${TURNSTILE_SITE_KEY:-1x00000000000000000000AA}

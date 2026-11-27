@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#881337" />
+      <stop offset="50%" stop-color="#4c0519" />
+      <stop offset="100%" stop-color="#831843" />
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="40%" stop-color="#eab308" />
+      <stop offset="100%" stop-color="#ca8a04" />
+    </radialGradient>
+  </defs>
+  <!-- Background Shield -->
+  <rect width="150" height="150" rx="16" fill="url(#bgGrad)" stroke="#eab308" stroke-width="4"/>
+  <!-- Derafsh Kaviani 4-Pointed Star -->
+  <polygon points="75,20 85,65 130,75 85,85 75,130 65,85 20,75 65,65" fill="url(#sunGlow)" stroke="#ca8a04" stroke-width="2"/>
+  <!-- Diagonal Rays -->
+  <polygon points="75,45 88,62 105,75 88,88 75,105 62,88 45,75 62,62" fill="#f59e0b" opacity="0.8"/>
+  <!-- Center Gem -->
+  <circle cx="75" cy="75" r="14" fill="#0284c7" stroke="#fbbf24" stroke-width="3"/>
+  <circle cx="75" cy="75" r="7" fill="#dc2626"/>
+  <!-- Outer Corner Ornaments -->
+  <circle cx="28" cy="28" r="6" fill="#eab308"/>
+  <circle cx="122" cy="28" r="6" fill="#eab308"/>
+  <circle cx="28" cy="122" r="6" fill="#eab308"/>
+  <circle cx="122" cy="122" r="6" fill="#eab308"/>
+</svg>

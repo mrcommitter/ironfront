@@ -1,0 +1,364 @@
+{
+  "id": "MiddleEast",
+  "name": "Middle East",
+  "translation_key": "map.middleeast",
+  "categories": [
+    "featured",
+    "asia"
+  ],
+  "multiplayer_frequency": 12,
+  "ffa_frequency": 10,
+  "team_frequency": 10,
+  "special_frequency": 10,
+  "featured_rank": 1,
+  "nations": [
+    {
+      "name": "Tehran",
+      "flag": "ir",
+      "coordinates": [
+        1485,
+        520
+      ]
+    },
+    {
+      "name": "Isfahan",
+      "flag": "ir",
+      "coordinates": [
+        1450,
+        720
+      ]
+    },
+    {
+      "name": "Fars",
+      "flag": "ir",
+      "coordinates": [
+        1550,
+        930
+      ]
+    },
+    {
+      "name": "Khorasan Razavi",
+      "flag": "ir",
+      "coordinates": [
+        1920,
+        460
+      ]
+    },
+    {
+      "name": "East Azerbaijan",
+      "flag": "ir",
+      "coordinates": [
+        1080,
+        260
+      ]
+    },
+    {
+      "name": "West Azerbaijan",
+      "flag": "ir",
+      "coordinates": [
+        990,
+        310
+      ]
+    },
+    {
+      "name": "Khuzestan",
+      "flag": "ir",
+      "coordinates": [
+        1199,
+        809
+      ]
+    },
+    {
+      "name": "Mazandaran",
+      "flag": "ir",
+      "coordinates": [
+        1470,
+        440
+      ]
+    },
+    {
+      "name": "Gilan",
+      "flag": "ir",
+      "coordinates": [
+        1290,
+        380
+      ]
+    },
+    {
+      "name": "Kerman",
+      "flag": "ir",
+      "coordinates": [
+        1780,
+        850
+      ]
+    },
+    {
+      "name": "Sistan and Baluchestan",
+      "flag": "ir",
+      "coordinates": [
+        2040,
+        920
+      ]
+    },
+    {
+      "name": "Kermanshah",
+      "flag": "ir",
+      "coordinates": [
+        1130,
+        600
+      ]
+    },
+    {
+      "name": "Lorestan",
+      "flag": "ir",
+      "coordinates": [
+        1220,
+        700
+      ]
+    },
+    {
+      "name": "Hamedan",
+      "flag": "ir",
+      "coordinates": [
+        1230,
+        560
+      ]
+    },
+    {
+      "name": "Kurdistan",
+      "flag": "ir",
+      "coordinates": [
+        1110,
+        470
+      ]
+    },
+    {
+      "name": "Hormozgan",
+      "flag": "ir",
+      "coordinates": [
+        1744,
+        1075
+      ]
+    },
+    {
+      "name": "Bushehr",
+      "flag": "ir",
+      "coordinates": [
+        1455,
+        902
+      ]
+    },
+    {
+      "name": "Yazd",
+      "flag": "ir",
+      "coordinates": [
+        1630,
+        740
+      ]
+    },
+    {
+      "name": "Qom",
+      "flag": "ir",
+      "coordinates": [
+        1420,
+        610
+      ]
+    },
+    {
+      "name": "Markazi",
+      "flag": "ir",
+      "coordinates": [
+        1320,
+        630
+      ]
+    },
+    {
+      "name": "Zanjan",
+      "flag": "ir",
+      "coordinates": [
+        1200,
+        410
+      ]
+    },
+    {
+      "name": "Qazvin",
+      "flag": "ir",
+      "coordinates": [
+        1330,
+        470
+      ]
+    },
+    {
+      "name": "Alborz",
+      "flag": "ir",
+      "coordinates": [
+        1425,
+        505
+      ]
+    },
+    {
+      "name": "Ardabil",
+      "flag": "ir",
+      "coordinates": [
+        1180,
+        240
+      ]
+    },
+    {
+      "name": "Golestan",
+      "flag": "ir",
+      "coordinates": [
+        1630,
+        410
+      ]
+    },
+    {
+      "name": "Semnan",
+      "flag": "ir",
+      "coordinates": [
+        1620,
+        550
+      ]
+    },
+    {
+      "name": "Ilam",
+      "flag": "ir",
+      "coordinates": [
+        1090,
+        730
+      ]
+    },
+    {
+      "name": "Chaharmahal and Bakhtiari",
+      "flag": "ir",
+      "coordinates": [
+        1350,
+        770
+      ]
+    },
+    {
+      "name": "Kohgiluyeh and Boyer-Ahmad",
+      "flag": "ir",
+      "coordinates": [
+        1380,
+        860
+      ]
+    },
+    {
+      "name": "North Khorasan",
+      "flag": "ir",
+      "coordinates": [
+        1760,
+        370
+      ]
+    },
+    {
+      "name": "South Khorasan",
+      "flag": "ir",
+      "coordinates": [
+        1950,
+        720
+      ]
+    },
+    {
+      "name": "Ottoman Empire",
+      "flag": "tr",
+      "coordinates": [
+        300,
+        65
+      ]
+    },
+    {
+      "name": "Kingdom of Iraq",
+      "flag": "Kingdom of Iraq",
+      "coordinates": [
+        973,
+        296
+      ]
+    },
+    {
+      "name": "Kingdom of Syria",
+      "flag": "Kingdom of Syria",
+      "coordinates": [
+        554,
+        364
+      ]
+    },
+    {
+      "name": "Kingdom of Saudi Arabia",
+      "flag": "Arabia",
+      "coordinates": [
+        1092,
+        1336
+      ]
+    },
+    {
+      "name": "Emirate of Kuwait",
+      "flag": "Socialist_flag",
+      "coordinates": [
+        1141,
+        797
+      ]
+    },
+    {
+      "name": "Trucial States",
+      "flag": "Socialist_flag",
+      "coordinates": [
+        1592,
+        1239
+      ]
+    },
+    {
+      "name": "Sultanate of Muscat",
+      "flag": "Socialist_flag",
+      "coordinates": [
+        1880,
+        1353
+      ]
+    },
+    {
+      "name": "Kingdom of Yemen",
+      "flag": "Kingdom of Yemen",
+      "coordinates": [
+        964,
+        1744
+      ]
+    },
+    {
+      "name": "Kingdom of Egypt",
+      "flag": "Kingdom of Egypt",
+      "coordinates": [
+        100,
+        781
+      ]
+    },
+    {
+      "name": "Emirate of Afghanistan",
+      "flag": "Emirate of Afghanistan",
+      "coordinates": [
+        2127,
+        373
+      ]
+    },
+    {
+      "name": "Republic of Armenia",
+      "flag": "am",
+      "coordinates": [
+        932,
+        15
+      ]
+    },
+    {
+      "name": "Russian State",
+      "flag": "ru",
+      "coordinates": [
+        1671,
+        71
+      ]
+    }
+  ],
+  "themes": [
+    "iran",
+    "asia"
+  ]
+}
