@@ -1,7 +1,7 @@
 import express from "express";
 import fs from "fs";
 import path from "path";
-import { accountRouter } from "../src/server/routes/AccountRoutes";
+import { accountRouter } from "./routes/AccountRoutes";
 
 const app = express();
 app.use(express.json());

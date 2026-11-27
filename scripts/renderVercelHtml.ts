@@ -22,10 +22,26 @@ async function main(): Promise<void> {
 
   const cosmeticsSrc = path.join(root, "resources", "cosmetics.json");
   const cosmeticsDest = path.join(staticDir, "cosmetics.json");
+  const staticApiDir = path.join(staticDir, "api");
+  await fs.mkdir(staticApiDir, { recursive: true });
+  await fs.writeFile(
+    path.join(staticApiDir, "cluster.json"),
+    JSON.stringify({ servers: {} }),
+    "utf-8",
+  );
   try {
     await fs.copyFile(cosmeticsSrc, cosmeticsDest);
+    await fs.copyFile(cosmeticsSrc, path.join(staticApiDir, "cosmetics.json"));
   } catch {
     // Optional if resources/cosmetics.json is absent.
+  }
+  try {
+    await fs.copyFile(
+      path.join(root, "resources", "news.json"),
+      path.join(staticApiDir, "news.json"),
+    );
+  } catch {
+    // Optional if resources/news.json is absent.
   }
 
   console.log("Rendered static/index.html for Vercel deployment.");

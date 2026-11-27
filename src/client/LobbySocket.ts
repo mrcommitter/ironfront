@@ -363,7 +363,12 @@ export class PublicLobbySocket {
       this.wsConnectionAttempts++;
     }
     if (this.wsConnectionAttempts >= this.maxWsAttempts && this.giveUp()) {
-      void showInGameAlert(translateText("error_modal.connection_error"));
+      const isVercel =
+        typeof window !== "undefined" &&
+        window.location.hostname.endsWith(".vercel.app");
+      if (!isVercel) {
+        void showInGameAlert(translateText("error_modal.connection_error"));
+      }
     }
     this.scheduleReconnect(rediscover);
   }
